@@ -18,12 +18,14 @@ runCommandKaem
       buildInputs =
         [ cp mkdir chmod
         ];
+
+      hasBinDir = true;
     };
   }
   ''
     set -xe
 
-    ${mkdirP} ''${out}/bin
+    ${mkdirP} ''${out}/bin/
     ${cpP} -v ${src} ''${out}/bin/${src.name} 
     ${chmodP} -v 755 ''${out}/bin/${src.name} 
   ''

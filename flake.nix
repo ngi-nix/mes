@@ -89,6 +89,8 @@
             sha256sum = final.callPackage ./stage5/sha256sum.nix {};
             untar = final.callPackage ./stage5/untar.nix {};
             ungz = final.callPackage ./stage5/ungz.nix {};
+
+            mes-m2 = final.callPackage ./stage5/mes.nix {};
           };
 
         overlay = self.overlays.mes;
@@ -107,7 +109,8 @@
                 inherit (pkgs)
                   m2-planet blood-elf m1 hex2 get_machine
                   kaem mkdir chmod cp
-                  catm sha256sum untar ungz;
+                  catm sha256sum untar ungz
+                  mes-m2;
               }
           );
 
