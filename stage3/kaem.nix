@@ -28,7 +28,7 @@ runCommandKaem
     drvArgs = {
       outputHashMode = "recursive";
       outputHashAlgo = "sha256";
-      outputHash = "sha256-W73lQL6FRuC9TyL8/Fn1vVqdAlrw0SgMH6p/kvdGojs=";
+      outputHash = "sha256-CjOIcuR1isFiEgq+qyAhC/7WP8x7I1UxEmnrlIM8yHc=";
       
       hasBinDir = false;
 
@@ -64,5 +64,5 @@ runCommandKaem
       --base-address 0x00600000 \
       -f ${stage0}/POSIX/M2libc/amd64/ELF-amd64-debug.hex2 \
       -f /build/kaem.hex2 \
-     	-o /nix/store/098zf4mdps1w2vr099zk7mh2k26src0x-kaem
+     	-o /nix/store/qmz7xjz5z00gydhd1v2cbc7ygr86xlap-kaem
   ''

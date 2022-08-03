@@ -2,7 +2,7 @@
 fetchFromGitHub {
   owner = "MagicRB";
   repo = "mescc-tools";
-  rev = "775e684b578d07fcabac8ddf106ffab82c8c08db";
-  sha256 = "sha256-qSCD273IFRYuV96kn74LbEXn9+FRojttIkbjHxorSxo=";
+  rev = "f237f6cd150be18c73a5d9a76aeee3041bf052a4";
+  sha256 = "sha256-nVyXBwAruNuLhzWc9/p0pLHg3avLkapdg54+jBFSCic=";
   fetchSubmodules = true;
 }
