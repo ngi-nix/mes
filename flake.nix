@@ -90,7 +90,7 @@
             untar = final.callPackage ./stage5/untar.nix {};
             ungz = final.callPackage ./stage5/ungz.nix {};
 
-            mes-m2 = final.callPackage ./stage5/mes.nix {};
+            mes-m2 = final.callPackage ./stage5/mes-m2.nix {};
           };
 
         overlay = self.overlays.mes;
@@ -101,9 +101,11 @@
               pkgs = import nixpkgs { inherit system; overlays = [ self.overlay ]; };
             in
               {
+                inherit (pkgs) bootstrap;
+
                 inherit (pkgs.bootstrap)
-                  hex0      kaem-0     hex0-seed   kaem-0-seed        # stage 0
-                  hex1      hex2-0     catm-0      m0                 # stage 1
+                  hex0      kaem-0     hex0-seed   kaem-0-seed         # stage 0
+                  hex1      hex2-0     catm-0      m0                  # stage 1
                   cc        m2-minimal blood-elf-0 m1-0        hex2-1; # stage 2
 
                 inherit (pkgs)
@@ -111,8 +113,11 @@
                   kaem mkdir chmod cp
                   catm sha256sum untar ungz
                   mes-m2;
+
+                fancyModule = pkgs.callPackage ./utils/selfhost-mes-m2.nix {};
               }
           );
+
 
         checks = forAllSystems
           (system:

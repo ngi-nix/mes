@@ -14,9 +14,11 @@ let
     ( builtins.unsafeDiscardStringContext
       ''
         #!${kaem}/bin/kaem -f
+        set -xe
+
         GUILE_LOAD_PATH=${mes-m2}/mes/module:${mes-m2}/module
         cd ${mes-m2}
-        ${base}/bin/mes
+        printf "${base}/bin/mes" "$@"
       '');
 
   mescc = builtins.toFile "mescc"
@@ -26,7 +28,7 @@ let
         GUILE_LOAD_PATH=${mes-m2}/mes/module:${mes-m2}/module:${nyacc}/module
         PATH=${m1}/bin:${hex2}/bin:''${PATH}
         cd ${mes-m2}
-        ${base}/bin/mes -e main ${mes-m2}/scripts/mescc.scm
+        ${base}/bin/mes -e main ${mes-m2}/scripts/mescc.scm "$@"
       '');
   base = 
     buildM2
@@ -142,7 +144,7 @@ runCommandKaem
   { name = "mes-m2";
     drvArgs = {
       buildInputs =
-        [ mkdir mes mescc chmod cp base
+        [ mkdir mes mescc chmod cp base mes-m2 m1 hex2 nyacc
         ];
     };
   }

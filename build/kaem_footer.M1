@@ -1,0 +1,5915 @@
+# Generated sections
+:ELF_shstr
+!0	# NULL
+:ELF_shstr__text
+".text"
+:ELF_shstr__shstr
+".shstrtab"
+:ELF_shstr__sym
+".symtab"
+:ELF_shstr__str
+".strtab"
+
+:ELF_section_headers
+%0	#sh_name
+%0	#sh_type
+%0 %0	#sh_flags
+%0 %0	#sh_addr
+%0 %0	#sh_offset
+%0 %0	#sh_size
+%0	#sh_link
+%0	#sh_info
+%1 %0	#sh_addralign
+%0 %0	#sh_entsize
+
+:ELF_section_header_text
+%ELF_shstr__text>ELF_shstr	#sh_name
+%1	#sh_type
+%6 %0	#sh_flags
+&ELF_text %0	#sh_addr
+%ELF_text>ELF_base %0	#sh_offset
+%ELF_data>ELF_text %0	#sh_size
+%0	#sh_link
+%0	#sh_info
+%1 %0	#sh_addralign
+%0 %0	#sh_entsize
+
+:ELF_section_header_shstr
+%ELF_shstr__shstr>ELF_shstr	#sh_name
+%3	#sh_type
+%0 %0	#sh_flags
+&ELF_shstr %0	#sh_addr
+%ELF_shstr>ELF_base %0	#sh_offset
+%ELF_section_headers>ELF_shstr %0	#sh_size
+%0	#sh_link
+%0	#sh_info
+%1 %0	#sh_addralign
+%0 %0	#sh_entsize
+
+:ELF_section_header_str
+%ELF_shstr__str>ELF_shstr	#sh_name
+%3	#sh_type
+%0 %0	#sh_flags
+&ELF_str %0	#sh_addr
+%ELF_str>ELF_base %0	#sh_offset
+%ELF_sym>ELF_str %0	#sh_size
+%0	#sh_link
+%0	#sh_info
+%1 %0	#sh_addralign
+%0 %0	#sh_entsize
+
+:ELF_section_header_sym
+%ELF_shstr__sym>ELF_shstr	#sh_name
+%2	#sh_type
+%0 %0	#sh_flags
+&ELF_sym %0	#sh_addr
+%ELF_sym>ELF_base %0	#sh_offset
+%ELF_end>ELF_sym %0	#sh_size
+%3	#sh_link
+%729	#sh_info
+%1 %0	#sh_addralign
+%24 %0	#sh_entsize
+
+# Generated string table
+:ELF_str
+!0	# NULL string
+:ELF_str_FUNCTION_strcpy	"FUNCTION_strcpy"
+:ELF_str_WHILE_strcpy_0	"WHILE_strcpy_0"
+:ELF_str_END_WHILE_strcpy_0	"END_WHILE_strcpy_0"
+:ELF_str_FUNCTION_strncpy	"FUNCTION_strncpy"
+:ELF_str_ELSE_strncpy_0	"ELSE_strncpy_0"
+:ELF_str__END_IF_strncpy_0	"_END_IF_strncpy_0"
+:ELF_str_WHILE_strncpy_1	"WHILE_strncpy_1"
+:ELF_str_ELSE_strncpy_2	"ELSE_strncpy_2"
+:ELF_str__END_IF_strncpy_2	"_END_IF_strncpy_2"
+:ELF_str_END_WHILE_strncpy_1	"END_WHILE_strncpy_1"
+:ELF_str_WHILE_strncpy_3	"WHILE_strncpy_3"
+:ELF_str_END_WHILE_strncpy_3	"END_WHILE_strncpy_3"
+:ELF_str_FUNCTION_strcat	"FUNCTION_strcat"
+:ELF_str_WHILE_strcat_0	"WHILE_strcat_0"
+:ELF_str_END_WHILE_strcat_0	"END_WHILE_strcat_0"
+:ELF_str_WHILE_strcat_1	"WHILE_strcat_1"
+:ELF_str_END_WHILE_strcat_1	"END_WHILE_strcat_1"
+:ELF_str_FUNCTION_strncat	"FUNCTION_strncat"
+:ELF_str_WHILE_strncat_0	"WHILE_strncat_0"
+:ELF_str_END_WHILE_strncat_0	"END_WHILE_strncat_0"
+:ELF_str_WHILE_strncat_1	"WHILE_strncat_1"
+:ELF_str_ELSE_strncat_2	"ELSE_strncat_2"
+:ELF_str__END_IF_strncat_2	"_END_IF_strncat_2"
+:ELF_str_END_WHILE_strncat_1	"END_WHILE_strncat_1"
+:ELF_str_FUNCTION_strlen	"FUNCTION_strlen"
+:ELF_str_WHILE_strlen_0	"WHILE_strlen_0"
+:ELF_str_END_WHILE_strlen_0	"END_WHILE_strlen_0"
+:ELF_str_FUNCTION_strnlen_s	"FUNCTION_strnlen_s"
+:ELF_str_WHILE_strnlen_s_0	"WHILE_strnlen_s_0"
+:ELF_str_ELSE_strnlen_s_1	"ELSE_strnlen_s_1"
+:ELF_str__END_IF_strnlen_s_1	"_END_IF_strnlen_s_1"
+:ELF_str_END_WHILE_strnlen_s_0	"END_WHILE_strnlen_s_0"
+:ELF_str_FUNCTION_strcmp	"FUNCTION_strcmp"
+:ELF_str_WHILE_strcmp_0	"WHILE_strcmp_0"
+:ELF_str_ELSE_strcmp_1	"ELSE_strcmp_1"
+:ELF_str__END_IF_strcmp_1	"_END_IF_strcmp_1"
+:ELF_str_END_WHILE_strcmp_0	"END_WHILE_strcmp_0"
+:ELF_str_FUNCTION_strncmp	"FUNCTION_strncmp"
+:ELF_str_WHILE_strncmp_0	"WHILE_strncmp_0"
+:ELF_str_ELSE_strncmp_1	"ELSE_strncmp_1"
+:ELF_str__END_IF_strncmp_1	"_END_IF_strncmp_1"
+:ELF_str_ELSE_strncmp_2	"ELSE_strncmp_2"
+:ELF_str__END_IF_strncmp_2	"_END_IF_strncmp_2"
+:ELF_str_END_WHILE_strncmp_0	"END_WHILE_strncmp_0"
+:ELF_str_FUNCTION_strchr	"FUNCTION_strchr"
+:ELF_str_WHILE_strchr_0	"WHILE_strchr_0"
+:ELF_str_ELSE_strchr_1	"ELSE_strchr_1"
+:ELF_str__END_IF_strchr_1	"_END_IF_strchr_1"
+:ELF_str_END_WHILE_strchr_0	"END_WHILE_strchr_0"
+:ELF_str_ELSE_strchr_2	"ELSE_strchr_2"
+:ELF_str__END_IF_strchr_2	"_END_IF_strchr_2"
+:ELF_str_FUNCTION_strrchr	"FUNCTION_strrchr"
+:ELF_str_WHILE_strrchr_0	"WHILE_strrchr_0"
+:ELF_str_END_WHILE_strrchr_0	"END_WHILE_strrchr_0"
+:ELF_str_WHILE_strrchr_1	"WHILE_strrchr_1"
+:ELF_str_ELSE_strrchr_2	"ELSE_strrchr_2"
+:ELF_str__END_IF_strrchr_2	"_END_IF_strrchr_2"
+:ELF_str_END_WHILE_strrchr_1	"END_WHILE_strrchr_1"
+:ELF_str_FUNCTION_strspn	"FUNCTION_strspn"
+:ELF_str_ELSE_strspn_0	"ELSE_strspn_0"
+:ELF_str__END_IF_strspn_0	"_END_IF_strspn_0"
+:ELF_str_WHILE_strspn_1	"WHILE_strspn_1"
+:ELF_str_END_WHILE_strspn_1	"END_WHILE_strspn_1"
+:ELF_str_FUNCTION_strcspn	"FUNCTION_strcspn"
+:ELF_str_WHILE_strcspn_0	"WHILE_strcspn_0"
+:ELF_str_END_WHILE_strcspn_0	"END_WHILE_strcspn_0"
+:ELF_str_FUNCTION_strpbrk	"FUNCTION_strpbrk"
+:ELF_str_WHILE_strpbrk_0	"WHILE_strpbrk_0"
+:ELF_str_ELSE_strpbrk_1	"ELSE_strpbrk_1"
+:ELF_str__END_IF_strpbrk_1	"_END_IF_strpbrk_1"
+:ELF_str_END_WHILE_strpbrk_0	"END_WHILE_strpbrk_0"
+:ELF_str_FUNCTION_memset	"FUNCTION_memset"
+:ELF_str_ELSE_memset_0	"ELSE_memset_0"
+:ELF_str__END_IF_memset_0	"_END_IF_memset_0"
+:ELF_str_WHILE_memset_1	"WHILE_memset_1"
+:ELF_str_END_WHILE_memset_1	"END_WHILE_memset_1"
+:ELF_str_FUNCTION_memcpy	"FUNCTION_memcpy"
+:ELF_str_ELSE_memcpy_0	"ELSE_memcpy_0"
+:ELF_str__END_IF_memcpy_0	"_END_IF_memcpy_0"
+:ELF_str_ELSE_memcpy_1	"ELSE_memcpy_1"
+:ELF_str__END_IF_memcpy_1	"_END_IF_memcpy_1"
+:ELF_str_WHILE_memcpy_2	"WHILE_memcpy_2"
+:ELF_str_END_WHILE_memcpy_2	"END_WHILE_memcpy_2"
+:ELF_str_FUNCTION_memmove	"FUNCTION_memmove"
+:ELF_str_ELSE_memmove_0	"ELSE_memmove_0"
+:ELF_str__END_IF_memmove_0	"_END_IF_memmove_0"
+:ELF_str_WHILE_memmove_1	"WHILE_memmove_1"
+:ELF_str_END_WHILE_memmove_1	"END_WHILE_memmove_1"
+:ELF_str_FUNCTION_memcmp	"FUNCTION_memcmp"
+:ELF_str_ELSE_memcmp_0	"ELSE_memcmp_0"
+:ELF_str__END_IF_memcmp_0	"_END_IF_memcmp_0"
+:ELF_str_WHILE_memcmp_1	"WHILE_memcmp_1"
+:ELF_str_ELSE_memcmp_2	"ELSE_memcmp_2"
+:ELF_str__END_IF_memcmp_2	"_END_IF_memcmp_2"
+:ELF_str_END_WHILE_memcmp_1	"END_WHILE_memcmp_1"
+:ELF_str_FUNCTION_access	"FUNCTION_access"
+:ELF_str_FUNCTION_chdir	"FUNCTION_chdir"
+:ELF_str_FUNCTION_fchdir	"FUNCTION_fchdir"
+:ELF_str_FUNCTION_fork	"FUNCTION_fork"
+:ELF_str_FUNCTION_waitpid	"FUNCTION_waitpid"
+:ELF_str_FUNCTION_execve	"FUNCTION_execve"
+:ELF_str_FUNCTION_read	"FUNCTION_read"
+:ELF_str_FUNCTION_write	"FUNCTION_write"
+:ELF_str_FUNCTION_lseek	"FUNCTION_lseek"
+:ELF_str_FUNCTION_close	"FUNCTION_close"
+:ELF_str_FUNCTION__getcwd	"FUNCTION__getcwd"
+:ELF_str_FUNCTION_getcwd	"FUNCTION_getcwd"
+:ELF_str_ELSE_getcwd_0	"ELSE_getcwd_0"
+:ELF_str__END_IF_getcwd_0	"_END_IF_getcwd_0"
+:ELF_str_FUNCTION_getwd	"FUNCTION_getwd"
+:ELF_str_FUNCTION_get_current_dir_name	"FUNCTION_get_current_dir_name"
+:ELF_str_FUNCTION_brk	"FUNCTION_brk"
+:ELF_str_FUNCTION_uname	"FUNCTION_uname"
+:ELF_str_FUNCTION_free	"FUNCTION_free"
+:ELF_str_FUNCTION_malloc	"FUNCTION_malloc"
+:ELF_str_ELSE_malloc_0	"ELSE_malloc_0"
+:ELF_str__END_IF_malloc_0	"_END_IF_malloc_0"
+:ELF_str_ELSE_malloc_2	"ELSE_malloc_2"
+:ELF_str__END_IF_malloc_2	"_END_IF_malloc_2"
+:ELF_str_ELSE_malloc_1	"ELSE_malloc_1"
+:ELF_str__END_IF_malloc_1	"_END_IF_malloc_1"
+:ELF_str_FUNCTION_memset	"FUNCTION_memset"
+:ELF_str_FOR_memset_0	"FOR_memset_0"
+:ELF_str_FOR_ITER_memset_0	"FOR_ITER_memset_0"
+:ELF_str_FOR_THEN_memset_0	"FOR_THEN_memset_0"
+:ELF_str_FOR_END_memset_0	"FOR_END_memset_0"
+:ELF_str_FUNCTION_calloc	"FUNCTION_calloc"
+:ELF_str_ELSE_calloc_0	"ELSE_calloc_0"
+:ELF_str__END_IF_calloc_0	"_END_IF_calloc_0"
+:ELF_str_FUNCTION_open	"FUNCTION_open"
+:ELF_str_FUNCTION___init_io	"FUNCTION___init_io"
+:ELF_str_FUNCTION___kill_io	"FUNCTION___kill_io"
+:ELF_str_WHILE___kill_io_0	"WHILE___kill_io_0"
+:ELF_str_END_WHILE___kill_io_0	"END_WHILE___kill_io_0"
+:ELF_str_FUNCTION_fgetc	"FUNCTION_fgetc"
+:ELF_str_ELSE_fgetc_0	"ELSE_fgetc_0"
+:ELF_str__END_IF_fgetc_0	"_END_IF_fgetc_0"
+:ELF_str_ELSE_fgetc_2	"ELSE_fgetc_2"
+:ELF_str__END_IF_fgetc_2	"_END_IF_fgetc_2"
+:ELF_str_ELSE_fgetc_1	"ELSE_fgetc_1"
+:ELF_str__END_IF_fgetc_1	"_END_IF_fgetc_1"
+:ELF_str_ELSE_fgetc_3	"ELSE_fgetc_3"
+:ELF_str__END_IF_fgetc_3	"_END_IF_fgetc_3"
+:ELF_str_FUNCTION_fread	"FUNCTION_fread"
+:ELF_str_ELSE_fread_0	"ELSE_fread_0"
+:ELF_str__END_IF_fread_0	"_END_IF_fread_0"
+:ELF_str_ELSE_fread_1	"ELSE_fread_1"
+:ELF_str__END_IF_fread_1	"_END_IF_fread_1"
+:ELF_str_FOR_fread_2	"FOR_fread_2"
+:ELF_str_FOR_ITER_fread_2	"FOR_ITER_fread_2"
+:ELF_str_FOR_THEN_fread_2	"FOR_THEN_fread_2"
+:ELF_str_ELSE_fread_3	"ELSE_fread_3"
+:ELF_str__END_IF_fread_3	"_END_IF_fread_3"
+:ELF_str_FOR_END_fread_2	"FOR_END_fread_2"
+:ELF_str_FUNCTION_getchar	"FUNCTION_getchar"
+:ELF_str_FUNCTION_fgets	"FUNCTION_fgets"
+:ELF_str_WHILE_fgets_0	"WHILE_fgets_0"
+:ELF_str_ELSE_fgets_1	"ELSE_fgets_1"
+:ELF_str__END_IF_fgets_1	"_END_IF_fgets_1"
+:ELF_str_ELSE_fgets_2	"ELSE_fgets_2"
+:ELF_str__END_IF_fgets_2	"_END_IF_fgets_2"
+:ELF_str_END_WHILE_fgets_0	"END_WHILE_fgets_0"
+:ELF_str_FUNCTION_fputc	"FUNCTION_fputc"
+:ELF_str_ELSE_fputc_0	"ELSE_fputc_0"
+:ELF_str__END_IF_fputc_0	"_END_IF_fputc_0"
+:ELF_str_ELSE_fputc_1	"ELSE_fputc_1"
+:ELF_str_ELSE_fputc_2	"ELSE_fputc_2"
+:ELF_str__END_IF_fputc_2	"_END_IF_fputc_2"
+:ELF_str__END_IF_fputc_1	"_END_IF_fputc_1"
+:ELF_str_FUNCTION_fwrite	"FUNCTION_fwrite"
+:ELF_str_ELSE_fwrite_0	"ELSE_fwrite_0"
+:ELF_str__END_IF_fwrite_0	"_END_IF_fwrite_0"
+:ELF_str_FOR_fwrite_1	"FOR_fwrite_1"
+:ELF_str_FOR_ITER_fwrite_1	"FOR_ITER_fwrite_1"
+:ELF_str_FOR_THEN_fwrite_1	"FOR_THEN_fwrite_1"
+:ELF_str_FOR_END_fwrite_1	"FOR_END_fwrite_1"
+:ELF_str_FUNCTION_putchar	"FUNCTION_putchar"
+:ELF_str_FUNCTION_fputs	"FUNCTION_fputs"
+:ELF_str_WHILE_fputs_0	"WHILE_fputs_0"
+:ELF_str_END_WHILE_fputs_0	"END_WHILE_fputs_0"
+:ELF_str_FUNCTION_puts	"FUNCTION_puts"
+:ELF_str_FUNCTION_fopen	"FUNCTION_fopen"
+:ELF_str_ELSE_fopen_0	"ELSE_fopen_0"
+:ELF_str__END_IF_fopen_0	"_END_IF_fopen_0"
+:ELF_str_ELSE_fopen_1	"ELSE_fopen_1"
+:ELF_str__END_IF_fopen_1	"_END_IF_fopen_1"
+:ELF_str_ELSE_fopen_2	"ELSE_fopen_2"
+:ELF_str__END_IF_fopen_2	"_END_IF_fopen_2"
+:ELF_str_ELSE_fopen_3	"ELSE_fopen_3"
+:ELF_str__END_IF_fopen_3	"_END_IF_fopen_3"
+:ELF_str_FUNCTION_fflush	"FUNCTION_fflush"
+:ELF_str_ELSE_fflush_0	"ELSE_fflush_0"
+:ELF_str__END_IF_fflush_0	"_END_IF_fflush_0"
+:ELF_str_ELSE_fflush_1	"ELSE_fflush_1"
+:ELF_str__END_IF_fflush_1	"_END_IF_fflush_1"
+:ELF_str_FUNCTION_fclose	"FUNCTION_fclose"
+:ELF_str_ELSE_fclose_0	"ELSE_fclose_0"
+:ELF_str__END_IF_fclose_0	"_END_IF_fclose_0"
+:ELF_str_ELSE_fclose_1	"ELSE_fclose_1"
+:ELF_str__END_IF_fclose_1	"_END_IF_fclose_1"
+:ELF_str_ELSE_fclose_2	"ELSE_fclose_2"
+:ELF_str__END_IF_fclose_2	"_END_IF_fclose_2"
+:ELF_str_ELSE_fclose_3	"ELSE_fclose_3"
+:ELF_str__END_IF_fclose_3	"_END_IF_fclose_3"
+:ELF_str_ELSE_fclose_4	"ELSE_fclose_4"
+:ELF_str__END_IF_fclose_4	"_END_IF_fclose_4"
+:ELF_str_FUNCTION_ungetc	"FUNCTION_ungetc"
+:ELF_str_ELSE_ungetc_0	"ELSE_ungetc_0"
+:ELF_str__END_IF_ungetc_0	"_END_IF_ungetc_0"
+:ELF_str_ELSE_ungetc_1	"ELSE_ungetc_1"
+:ELF_str__END_IF_ungetc_1	"_END_IF_ungetc_1"
+:ELF_str_ELSE_ungetc_2	"ELSE_ungetc_2"
+:ELF_str__END_IF_ungetc_2	"_END_IF_ungetc_2"
+:ELF_str_ELSE_ungetc_3	"ELSE_ungetc_3"
+:ELF_str__END_IF_ungetc_3	"_END_IF_ungetc_3"
+:ELF_str_FUNCTION_ftell	"FUNCTION_ftell"
+:ELF_str_ELSE_ftell_0	"ELSE_ftell_0"
+:ELF_str__END_IF_ftell_0	"_END_IF_ftell_0"
+:ELF_str_ELSE_ftell_1	"ELSE_ftell_1"
+:ELF_str__END_IF_ftell_1	"_END_IF_ftell_1"
+:ELF_str_FUNCTION_fseek	"FUNCTION_fseek"
+:ELF_str_ELSE_fseek_0	"ELSE_fseek_0"
+:ELF_str__END_IF_fseek_0	"_END_IF_fseek_0"
+:ELF_str_ELSE_fseek_1	"ELSE_fseek_1"
+:ELF_str__END_IF_fseek_1	"_END_IF_fseek_1"
+:ELF_str_ELSE_fseek_2	"ELSE_fseek_2"
+:ELF_str_ELSE_fseek_3	"ELSE_fseek_3"
+:ELF_str_ELSE_fseek_4	"ELSE_fseek_4"
+:ELF_str__END_IF_fseek_4	"_END_IF_fseek_4"
+:ELF_str__END_IF_fseek_3	"_END_IF_fseek_3"
+:ELF_str__END_IF_fseek_2	"_END_IF_fseek_2"
+:ELF_str_ELSE_fseek_5	"ELSE_fseek_5"
+:ELF_str__END_IF_fseek_5	"_END_IF_fseek_5"
+:ELF_str_ELSE_fseek_6	"ELSE_fseek_6"
+:ELF_str__END_IF_fseek_6	"_END_IF_fseek_6"
+:ELF_str_FUNCTION_rewind	"FUNCTION_rewind"
+:ELF_str_FUNCTION_require	"FUNCTION_require"
+:ELF_str_ELSE_require_0	"ELSE_require_0"
+:ELF_str__END_IF_require_0	"_END_IF_require_0"
+:ELF_str_FUNCTION_match	"FUNCTION_match"
+:ELF_str_ELSE_match_0	"ELSE_match_0"
+:ELF_str__END_IF_match_0	"_END_IF_match_0"
+:ELF_str_ELSE_match_1	"ELSE_match_1"
+:ELF_str__END_IF_match_1	"_END_IF_match_1"
+:ELF_str_ELSE_match_2	"ELSE_match_2"
+:ELF_str__END_IF_match_2	"_END_IF_match_2"
+:ELF_str_DO_match_3	"DO_match_3"
+:ELF_str_ELSE_match_4	"ELSE_match_4"
+:ELF_str__END_IF_match_4	"_END_IF_match_4"
+:ELF_str_DO_TEST_match_3	"DO_TEST_match_3"
+:ELF_str_DO_END_match_3	"DO_END_match_3"
+:ELF_str_FUNCTION_in_set	"FUNCTION_in_set"
+:ELF_str_ELSE_in_set_0	"ELSE_in_set_0"
+:ELF_str__END_IF_in_set_0	"_END_IF_in_set_0"
+:ELF_str_WHILE_in_set_1	"WHILE_in_set_1"
+:ELF_str_ELSE_in_set_2	"ELSE_in_set_2"
+:ELF_str__END_IF_in_set_2	"_END_IF_in_set_2"
+:ELF_str_END_WHILE_in_set_1	"END_WHILE_in_set_1"
+:ELF_str_FUNCTION___index_number	"FUNCTION___index_number"
+:ELF_str_WHILE___index_number_0	"WHILE___index_number_0"
+:ELF_str_ELSE___index_number_1	"ELSE___index_number_1"
+:ELF_str__END_IF___index_number_1	"_END_IF___index_number_1"
+:ELF_str_END_WHILE___index_number_0	"END_WHILE___index_number_0"
+:ELF_str_FUNCTION___toupper	"FUNCTION___toupper"
+:ELF_str_ELSE___toupper_0	"ELSE___toupper_0"
+:ELF_str__END_IF___toupper_0	"_END_IF___toupper_0"
+:ELF_str_FUNCTION___set_reader	"FUNCTION___set_reader"
+:ELF_str_ELSE___set_reader_0	"ELSE___set_reader_0"
+:ELF_str__END_IF___set_reader_0	"_END_IF___set_reader_0"
+:ELF_str_WHILE___set_reader_1	"WHILE___set_reader_1"
+:ELF_str_ELSE___set_reader_2	"ELSE___set_reader_2"
+:ELF_str__END_IF___set_reader_2	"_END_IF___set_reader_2"
+:ELF_str_END_WHILE___set_reader_1	"END_WHILE___set_reader_1"
+:ELF_str_ELSE___set_reader_3	"ELSE___set_reader_3"
+:ELF_str__END_IF___set_reader_3	"_END_IF___set_reader_3"
+:ELF_str_ELSE___set_reader_4	"ELSE___set_reader_4"
+:ELF_str__END_IF___set_reader_4	"_END_IF___set_reader_4"
+:ELF_str_FUNCTION_strtoint	"FUNCTION_strtoint"
+:ELF_str_ELSE_strtoint_0	"ELSE_strtoint_0"
+:ELF_str_ELSE_strtoint_1	"ELSE_strtoint_1"
+:ELF_str_ELSE_strtoint_3	"ELSE_strtoint_3"
+:ELF_str_ELSE_strtoint_5	"ELSE_strtoint_5"
+:ELF_str__END_IF_strtoint_5	"_END_IF_strtoint_5"
+:ELF_str__END_IF_strtoint_3	"_END_IF_strtoint_3"
+:ELF_str__END_IF_strtoint_1	"_END_IF_strtoint_1"
+:ELF_str__END_IF_strtoint_0	"_END_IF_strtoint_0"
+:ELF_str_ELSE_strtoint_8	"ELSE_strtoint_8"
+:ELF_str__END_IF_strtoint_8	"_END_IF_strtoint_8"
+:ELF_str_FUNCTION_int2str	"FUNCTION_int2str"
+:ELF_str_ELSE_int2str_2	"ELSE_int2str_2"
+:ELF_str__END_IF_int2str_2	"_END_IF_int2str_2"
+:ELF_str_ELSE_int2str_5	"ELSE_int2str_5"
+:ELF_str__END_IF_int2str_5	"_END_IF_int2str_5"
+:ELF_str_ELSE_int2str_4	"ELSE_int2str_4"
+:ELF_str__END_IF_int2str_4	"_END_IF_int2str_4"
+:ELF_str_DO_int2str_7	"DO_int2str_7"
+:ELF_str_DO_TEST_int2str_7	"DO_TEST_int2str_7"
+:ELF_str_DO_END_int2str_7	"DO_END_int2str_7"
+:ELF_str_ELSE_int2str_8	"ELSE_int2str_8"
+:ELF_str__END_IF_int2str_8	"_END_IF_int2str_8"
+:ELF_str_FUNCTION_run_substitution	"FUNCTION_run_substitution"
+:ELF_str_ELSE_run_substitution_0	"ELSE_run_substitution_0"
+:ELF_str__END_IF_run_substitution_0	"_END_IF_run_substitution_0"
+:ELF_str_FUNCTION_variable_substitute_ifset	"FUNCTION_variable_substitute_ifset"
+:ELF_str_WHILE_variable_substitute_ifset_0	"WHILE_variable_substitute_ifset_0"
+:ELF_str_ELSE_variable_substitute_ifset_1	"ELSE_variable_substitute_ifset_1"
+:ELF_str__END_IF_variable_substitute_ifset_1	"_END_IF_variable_substitute_ifset_1"
+:ELF_str_END_WHILE_variable_substitute_ifset_0	"END_WHILE_variable_substitute_ifset_0"
+:ELF_str_ELSE_variable_substitute_ifset_2	"ELSE_variable_substitute_ifset_2"
+:ELF_str__END_IF_variable_substitute_ifset_2	"_END_IF_variable_substitute_ifset_2"
+:ELF_str_WHILE_variable_substitute_ifset_4	"WHILE_variable_substitute_ifset_4"
+:ELF_str_END_WHILE_variable_substitute_ifset_4	"END_WHILE_variable_substitute_ifset_4"
+:ELF_str_WHILE_variable_substitute_ifset_6	"WHILE_variable_substitute_ifset_6"
+:ELF_str_END_WHILE_variable_substitute_ifset_6	"END_WHILE_variable_substitute_ifset_6"
+:ELF_str_ELSE_variable_substitute_ifset_8	"ELSE_variable_substitute_ifset_8"
+:ELF_str__END_IF_variable_substitute_ifset_8	"_END_IF_variable_substitute_ifset_8"
+:ELF_str_FUNCTION_variable_substitute	"FUNCTION_variable_substitute"
+:ELF_str_ELSE_variable_substitute_0	"ELSE_variable_substitute_0"
+:ELF_str__END_IF_variable_substitute_0	"_END_IF_variable_substitute_0"
+:ELF_str_WHILE_variable_substitute_2	"WHILE_variable_substitute_2"
+:ELF_str_ELSE_variable_substitute_4	"ELSE_variable_substitute_4"
+:ELF_str_ELSE_variable_substitute_6	"ELSE_variable_substitute_6"
+:ELF_str_ELSE_variable_substitute_7	"ELSE_variable_substitute_7"
+:ELF_str__END_IF_variable_substitute_7	"_END_IF_variable_substitute_7"
+:ELF_str__END_IF_variable_substitute_6	"_END_IF_variable_substitute_6"
+:ELF_str__END_IF_variable_substitute_4	"_END_IF_variable_substitute_4"
+:ELF_str_END_WHILE_variable_substitute_2	"END_WHILE_variable_substitute_2"
+:ELF_str_FUNCTION_variable_all	"FUNCTION_variable_all"
+:ELF_str_WHILE_variable_all_0	"WHILE_variable_all_0"
+:ELF_str_ELSE_variable_all_4	"ELSE_variable_all_4"
+:ELF_str__END_IF_variable_all_4	"_END_IF_variable_all_4"
+:ELF_str_END_WHILE_variable_all_0	"END_WHILE_variable_all_0"
+:ELF_str_ELSE_variable_all_5	"ELSE_variable_all_5"
+:ELF_str__END_IF_variable_all_5	"_END_IF_variable_all_5"
+:ELF_str_FOR_variable_all_8	"FOR_variable_all_8"
+:ELF_str_FOR_ITER_variable_all_8	"FOR_ITER_variable_all_8"
+:ELF_str_FOR_THEN_variable_all_8	"FOR_THEN_variable_all_8"
+:ELF_str_FOR_END_variable_all_8	"FOR_END_variable_all_8"
+:ELF_str_FUNCTION_handle_variables	"FUNCTION_handle_variables"
+:ELF_str_WHILE_handle_variables_2	"WHILE_handle_variables_2"
+:ELF_str_ELSE_handle_variables_3	"ELSE_handle_variables_3"
+:ELF_str__END_IF_handle_variables_3	"_END_IF_handle_variables_3"
+:ELF_str_END_WHILE_handle_variables_2	"END_WHILE_handle_variables_2"
+:ELF_str_substitute	"substitute"
+:ELF_str_ELSE_handle_variables_4	"ELSE_handle_variables_4"
+:ELF_str_ELSE_handle_variables_5	"ELSE_handle_variables_5"
+:ELF_str__END_IF_handle_variables_5	"_END_IF_handle_variables_5"
+:ELF_str__END_IF_handle_variables_4	"_END_IF_handle_variables_4"
+:ELF_str_WHILE_handle_variables_7	"WHILE_handle_variables_7"
+:ELF_str_ELSE_handle_variables_8	"ELSE_handle_variables_8"
+:ELF_str__END_IF_handle_variables_8	"_END_IF_handle_variables_8"
+:ELF_str_END_WHILE_handle_variables_7	"END_WHILE_handle_variables_7"
+:ELF_str_FUNCTION_find_char	"FUNCTION_find_char"
+:ELF_str_ELSE_find_char_0	"ELSE_find_char_0"
+:ELF_str__END_IF_find_char_0	"_END_IF_find_char_0"
+:ELF_str_WHILE_find_char_1	"WHILE_find_char_1"
+:ELF_str_ELSE_find_char_2	"ELSE_find_char_2"
+:ELF_str__END_IF_find_char_2	"_END_IF_find_char_2"
+:ELF_str_END_WHILE_find_char_1	"END_WHILE_find_char_1"
+:ELF_str_FUNCTION_array_length	"FUNCTION_array_length"
+:ELF_str_WHILE_array_length_0	"WHILE_array_length_0"
+:ELF_str_END_WHILE_array_length_0	"END_WHILE_array_length_0"
+:ELF_str_FUNCTION_env_lookup	"FUNCTION_env_lookup"
+:ELF_str_WHILE_env_lookup_0	"WHILE_env_lookup_0"
+:ELF_str_ELSE_env_lookup_1	"ELSE_env_lookup_1"
+:ELF_str__END_IF_env_lookup_1	"_END_IF_env_lookup_1"
+:ELF_str_END_WHILE_env_lookup_0	"END_WHILE_env_lookup_0"
+:ELF_str_FUNCTION_find_executable	"FUNCTION_find_executable"
+:ELF_str_ELSE_find_executable_0	"ELSE_find_executable_0"
+:ELF_str__END_IF_find_executable_0	"_END_IF_find_executable_0"
+:ELF_str_ELSE_find_executable_2	"ELSE_find_executable_2"
+:ELF_str__END_IF_find_executable_2	"_END_IF_find_executable_2"
+:ELF_str_WHILE_find_executable_4	"WHILE_find_executable_4"
+:ELF_str_FOR_find_executable_5	"FOR_find_executable_5"
+:ELF_str_FOR_ITER_find_executable_5	"FOR_ITER_find_executable_5"
+:ELF_str_FOR_THEN_find_executable_5	"FOR_THEN_find_executable_5"
+:ELF_str_FOR_END_find_executable_5	"FOR_END_find_executable_5"
+:ELF_str_FOR_find_executable_6	"FOR_find_executable_6"
+:ELF_str_FOR_ITER_find_executable_6	"FOR_ITER_find_executable_6"
+:ELF_str_FOR_THEN_find_executable_6	"FOR_THEN_find_executable_6"
+:ELF_str_FOR_END_find_executable_6	"FOR_END_find_executable_6"
+:ELF_str_FOR_find_executable_8	"FOR_find_executable_8"
+:ELF_str_FOR_ITER_find_executable_8	"FOR_ITER_find_executable_8"
+:ELF_str_FOR_THEN_find_executable_8	"FOR_THEN_find_executable_8"
+:ELF_str_FOR_END_find_executable_8	"FOR_END_find_executable_8"
+:ELF_str_ELSE_find_executable_12	"ELSE_find_executable_12"
+:ELF_str__END_IF_find_executable_12	"_END_IF_find_executable_12"
+:ELF_str_END_WHILE_find_executable_4	"END_WHILE_find_executable_4"
+:ELF_str_FUNCTION_list_to_array	"FUNCTION_list_to_array"
+:ELF_str_WHILE_list_to_array_2	"WHILE_list_to_array_2"
+:ELF_str_ELSE_list_to_array_5	"ELSE_list_to_array_5"
+:ELF_str_FOR_list_to_array_6	"FOR_list_to_array_6"
+:ELF_str_FOR_ITER_list_to_array_6	"FOR_ITER_list_to_array_6"
+:ELF_str_FOR_THEN_list_to_array_6	"FOR_THEN_list_to_array_6"
+:ELF_str_FOR_END_list_to_array_6	"FOR_END_list_to_array_6"
+:ELF_str_FOR_list_to_array_7	"FOR_list_to_array_7"
+:ELF_str_FOR_ITER_list_to_array_7	"FOR_ITER_list_to_array_7"
+:ELF_str_FOR_THEN_list_to_array_7	"FOR_THEN_list_to_array_7"
+:ELF_str_FOR_END_list_to_array_7	"FOR_END_list_to_array_7"
+:ELF_str__END_IF_list_to_array_5	"_END_IF_list_to_array_5"
+:ELF_str_ELSE_list_to_array_8	"ELSE_list_to_array_8"
+:ELF_str__END_IF_list_to_array_8	"_END_IF_list_to_array_8"
+:ELF_str_FOR_list_to_array_10	"FOR_list_to_array_10"
+:ELF_str_FOR_ITER_list_to_array_10	"FOR_ITER_list_to_array_10"
+:ELF_str_FOR_THEN_list_to_array_10	"FOR_THEN_list_to_array_10"
+:ELF_str_FOR_END_list_to_array_10	"FOR_END_list_to_array_10"
+:ELF_str_END_WHILE_list_to_array_2	"END_WHILE_list_to_array_2"
+:ELF_str_FUNCTION_handle_escape	"FUNCTION_handle_escape"
+:ELF_str_ELSE_handle_escape_0	"ELSE_handle_escape_0"
+:ELF_str_ELSE_handle_escape_1	"ELSE_handle_escape_1"
+:ELF_str_ELSE_handle_escape_2	"ELSE_handle_escape_2"
+:ELF_str_ELSE_handle_escape_3	"ELSE_handle_escape_3"
+:ELF_str__END_IF_handle_escape_3	"_END_IF_handle_escape_3"
+:ELF_str__END_IF_handle_escape_2	"_END_IF_handle_escape_2"
+:ELF_str__END_IF_handle_escape_1	"_END_IF_handle_escape_1"
+:ELF_str__END_IF_handle_escape_0	"_END_IF_handle_escape_0"
+:ELF_str_FUNCTION_collect_comment	"FUNCTION_collect_comment"
+:ELF_str_DO_collect_comment_0	"DO_collect_comment_0"
+:ELF_str_DO_TEST_collect_comment_0	"DO_TEST_collect_comment_0"
+:ELF_str_DO_END_collect_comment_0	"DO_END_collect_comment_0"
+:ELF_str_FUNCTION_collect_string	"FUNCTION_collect_string"
+:ELF_str_DO_collect_string_0	"DO_collect_string_0"
+:ELF_str_ELSE_collect_string_3	"ELSE_collect_string_3"
+:ELF_str_ELSE_collect_string_4	"ELSE_collect_string_4"
+:ELF_str__END_IF_collect_string_4	"_END_IF_collect_string_4"
+:ELF_str__END_IF_collect_string_3	"_END_IF_collect_string_3"
+:ELF_str_DO_TEST_collect_string_0	"DO_TEST_collect_string_0"
+:ELF_str_DO_END_collect_string_0	"DO_END_collect_string_0"
+:ELF_str_FUNCTION_collect_token	"FUNCTION_collect_token"
+:ELF_str_DO_collect_token_1	"DO_collect_token_1"
+:ELF_str_ELSE_collect_token_3	"ELSE_collect_token_3"
+:ELF_str_ELSE_collect_token_4	"ELSE_collect_token_4"
+:ELF_str_ELSE_collect_token_6	"ELSE_collect_token_6"
+:ELF_str__END_IF_collect_token_6	"_END_IF_collect_token_6"
+:ELF_str_ELSE_collect_token_5	"ELSE_collect_token_5"
+:ELF_str_ELSE_collect_token_7	"ELSE_collect_token_7"
+:ELF_str_ELSE_collect_token_9	"ELSE_collect_token_9"
+:ELF_str__END_IF_collect_token_9	"_END_IF_collect_token_9"
+:ELF_str_ELSE_collect_token_8	"ELSE_collect_token_8"
+:ELF_str_ELSE_collect_token_11	"ELSE_collect_token_11"
+:ELF_str__END_IF_collect_token_11	"_END_IF_collect_token_11"
+:ELF_str_ELSE_collect_token_10	"ELSE_collect_token_10"
+:ELF_str_ELSE_collect_token_12	"ELSE_collect_token_12"
+:ELF_str__END_IF_collect_token_12	"_END_IF_collect_token_12"
+:ELF_str__END_IF_collect_token_10	"_END_IF_collect_token_10"
+:ELF_str__END_IF_collect_token_8	"_END_IF_collect_token_8"
+:ELF_str__END_IF_collect_token_7	"_END_IF_collect_token_7"
+:ELF_str__END_IF_collect_token_5	"_END_IF_collect_token_5"
+:ELF_str__END_IF_collect_token_4	"_END_IF_collect_token_4"
+:ELF_str__END_IF_collect_token_3	"_END_IF_collect_token_3"
+:ELF_str_DO_TEST_collect_token_1	"DO_TEST_collect_token_1"
+:ELF_str_DO_END_collect_token_1	"DO_END_collect_token_1"
+:ELF_str_FUNCTION_is_envar	"FUNCTION_is_envar"
+:ELF_str_WHILE_is_envar_0	"WHILE_is_envar_0"
+:ELF_str_ELSE_is_envar_1	"ELSE_is_envar_1"
+:ELF_str__END_IF_is_envar_1	"_END_IF_is_envar_1"
+:ELF_str_END_WHILE_is_envar_0	"END_WHILE_is_envar_0"
+:ELF_str_FUNCTION_add_envar	"FUNCTION_add_envar"
+:ELF_str_WHILE_add_envar_0	"WHILE_add_envar_0"
+:ELF_str_END_WHILE_add_envar_0	"END_WHILE_add_envar_0"
+:ELF_str_WHILE_add_envar_2	"WHILE_add_envar_2"
+:ELF_str_END_WHILE_add_envar_2	"END_WHILE_add_envar_2"
+:ELF_str_ELSE_add_envar_3	"ELSE_add_envar_3"
+:ELF_str__END_IF_add_envar_3	"_END_IF_add_envar_3"
+:ELF_str_ELSE_add_envar_5	"ELSE_add_envar_5"
+:ELF_str__END_IF_add_envar_5	"_END_IF_add_envar_5"
+:ELF_str_WHILE_add_envar_7	"WHILE_add_envar_7"
+:ELF_str_ELSE_add_envar_8	"ELSE_add_envar_8"
+:ELF_str__END_IF_add_envar_8	"_END_IF_add_envar_8"
+:ELF_str_END_WHILE_add_envar_7	"END_WHILE_add_envar_7"
+:ELF_str_FUNCTION_cd	"FUNCTION_cd"
+:ELF_str_ELSE_cd_0	"ELSE_cd_0"
+:ELF_str__END_IF_cd_0	"_END_IF_cd_0"
+:ELF_str_ELSE_cd_1	"ELSE_cd_1"
+:ELF_str__END_IF_cd_1	"_END_IF_cd_1"
+:ELF_str_ELSE_cd_2	"ELSE_cd_2"
+:ELF_str__END_IF_cd_2	"_END_IF_cd_2"
+:ELF_str_FUNCTION_pwd	"FUNCTION_pwd"
+:ELF_str_FUNCTION_set	"FUNCTION_set"
+:ELF_str_ELSE_set_0	"ELSE_set_0"
+:ELF_str__END_IF_set_0	"_END_IF_set_0"
+:ELF_str_ELSE_set_1	"ELSE_set_1"
+:ELF_str__END_IF_set_1	"_END_IF_set_1"
+:ELF_str_FOR_set_3	"FOR_set_3"
+:ELF_str_FOR_ITER_set_3	"FOR_ITER_set_3"
+:ELF_str_FOR_THEN_set_3	"FOR_THEN_set_3"
+:ELF_str_FOR_END_set_3	"FOR_END_set_3"
+:ELF_str_FOR_set_4	"FOR_set_4"
+:ELF_str_FOR_ITER_set_4	"FOR_ITER_set_4"
+:ELF_str_FOR_THEN_set_4	"FOR_THEN_set_4"
+:ELF_str_ELSE_set_6	"ELSE_set_6"
+:ELF_str__END_IF_set_6	"_END_IF_set_6"
+:ELF_str_ELSE_set_5	"ELSE_set_5"
+:ELF_str_ELSE_set_8	"ELSE_set_8"
+:ELF_str_ELSE_set_9	"ELSE_set_9"
+:ELF_str__END_IF_set_9	"_END_IF_set_9"
+:ELF_str__END_IF_set_8	"_END_IF_set_8"
+:ELF_str__END_IF_set_5	"_END_IF_set_5"
+:ELF_str_FOR_END_set_4	"FOR_END_set_4"
+:ELF_str_cleanup_set	"cleanup_set"
+:ELF_str_FUNCTION_echo	"FUNCTION_echo"
+:ELF_str_ELSE_echo_0	"ELSE_echo_0"
+:ELF_str__END_IF_echo_0	"_END_IF_echo_0"
+:ELF_str_ELSE_echo_2	"ELSE_echo_2"
+:ELF_str__END_IF_echo_2	"_END_IF_echo_2"
+:ELF_str_WHILE_echo_4	"WHILE_echo_4"
+:ELF_str_ELSE_echo_5	"ELSE_echo_5"
+:ELF_str__END_IF_echo_5	"_END_IF_echo_5"
+:ELF_str_END_WHILE_echo_4	"END_WHILE_echo_4"
+:ELF_str_FUNCTION_unset	"FUNCTION_unset"
+:ELF_str_WHILE_unset_0	"WHILE_unset_0"
+:ELF_str_WHILE_unset_1	"WHILE_unset_1"
+:ELF_str_ELSE_unset_2	"ELSE_unset_2"
+:ELF_str__END_IF_unset_2	"_END_IF_unset_2"
+:ELF_str_ELSE_unset_3	"ELSE_unset_3"
+:ELF_str__END_IF_unset_3	"_END_IF_unset_3"
+:ELF_str_END_WHILE_unset_1	"END_WHILE_unset_1"
+:ELF_str_ELSE_unset_4	"ELSE_unset_4"
+:ELF_str__END_IF_unset_4	"_END_IF_unset_4"
+:ELF_str_END_WHILE_unset_0	"END_WHILE_unset_0"
+:ELF_str_FUNCTION_execute	"FUNCTION_execute"
+:ELF_str_ELSE_execute_0	"ELSE_execute_0"
+:ELF_str_ELSE_execute_3	"ELSE_execute_3"
+:ELF_str__END_IF_execute_3	"_END_IF_execute_3"
+:ELF_str_ELSE_execute_1	"ELSE_execute_1"
+:ELF_str_ELSE_execute_7	"ELSE_execute_7"
+:ELF_str__END_IF_execute_7	"_END_IF_execute_7"
+:ELF_str_ELSE_execute_5	"ELSE_execute_5"
+:ELF_str_ELSE_execute_11	"ELSE_execute_11"
+:ELF_str__END_IF_execute_11	"_END_IF_execute_11"
+:ELF_str_ELSE_execute_9	"ELSE_execute_9"
+:ELF_str_ELSE_execute_13	"ELSE_execute_13"
+:ELF_str_ELSE_execute_15	"ELSE_execute_15"
+:ELF_str__END_IF_execute_15	"_END_IF_execute_15"
+:ELF_str__END_IF_execute_13	"_END_IF_execute_13"
+:ELF_str__END_IF_execute_9	"_END_IF_execute_9"
+:ELF_str__END_IF_execute_5	"_END_IF_execute_5"
+:ELF_str__END_IF_execute_1	"_END_IF_execute_1"
+:ELF_str__END_IF_execute_0	"_END_IF_execute_0"
+:ELF_str_ELSE_execute_18	"ELSE_execute_18"
+:ELF_str__END_IF_execute_18	"_END_IF_execute_18"
+:ELF_str_ELSE_execute_17	"ELSE_execute_17"
+:ELF_str__END_IF_execute_17	"_END_IF_execute_17"
+:ELF_str_ELSE_execute_21	"ELSE_execute_21"
+:ELF_str_ELSE_execute_25	"ELSE_execute_25"
+:ELF_str__END_IF_execute_25	"_END_IF_execute_25"
+:ELF_str_ELSE_execute_24	"ELSE_execute_24"
+:ELF_str__END_IF_execute_24	"_END_IF_execute_24"
+:ELF_str__END_IF_execute_21	"_END_IF_execute_21"
+:ELF_str_FUNCTION_collect_command	"FUNCTION_collect_command"
+:ELF_str_WHILE_collect_command_2	"WHILE_collect_command_2"
+:ELF_str_ELSE_collect_command_3	"ELSE_collect_command_3"
+:ELF_str__END_IF_collect_command_3	"_END_IF_collect_command_3"
+:ELF_str_ELSE_collect_command_6	"ELSE_collect_command_6"
+:ELF_str__END_IF_collect_command_6	"_END_IF_collect_command_6"
+:ELF_str_END_WHILE_collect_command_2	"END_WHILE_collect_command_2"
+:ELF_str_ELSE_collect_command_9	"ELSE_collect_command_9"
+:ELF_str__END_IF_collect_command_9	"_END_IF_collect_command_9"
+:ELF_str_WHILE_collect_command_13	"WHILE_collect_command_13"
+:ELF_str_ELSE_collect_command_16	"ELSE_collect_command_16"
+:ELF_str__END_IF_collect_command_16	"_END_IF_collect_command_16"
+:ELF_str_ELSE_collect_command_15	"ELSE_collect_command_15"
+:ELF_str__END_IF_collect_command_15	"_END_IF_collect_command_15"
+:ELF_str_END_WHILE_collect_command_13	"END_WHILE_collect_command_13"
+:ELF_str_ELSE_collect_command_10	"ELSE_collect_command_10"
+:ELF_str__END_IF_collect_command_10	"_END_IF_collect_command_10"
+:ELF_str_FUNCTION_run_script	"FUNCTION_run_script"
+:ELF_str_WHILE_run_script_0	"WHILE_run_script_0"
+:ELF_str_ELSE_run_script_1	"ELSE_run_script_1"
+:ELF_str__END_IF_run_script_1	"_END_IF_run_script_1"
+:ELF_str_ELSE_run_script_2	"ELSE_run_script_2"
+:ELF_str__END_IF_run_script_2	"_END_IF_run_script_2"
+:ELF_str_ELSE_run_script_3	"ELSE_run_script_3"
+:ELF_str__END_IF_run_script_3	"_END_IF_run_script_3"
+:ELF_str_END_WHILE_run_script_0	"END_WHILE_run_script_0"
+:ELF_str_FUNCTION_populate_env	"FUNCTION_populate_env"
+:ELF_str_FOR_populate_env_1	"FOR_populate_env_1"
+:ELF_str_FOR_ITER_populate_env_1	"FOR_ITER_populate_env_1"
+:ELF_str_FOR_THEN_populate_env_1	"FOR_THEN_populate_env_1"
+:ELF_str_WHILE_populate_env_5	"WHILE_populate_env_5"
+:ELF_str_END_WHILE_populate_env_5	"END_WHILE_populate_env_5"
+:ELF_str_ELSE_populate_env_6	"ELSE_populate_env_6"
+:ELF_str__END_IF_populate_env_6	"_END_IF_populate_env_6"
+:ELF_str_WHILE_populate_env_7	"WHILE_populate_env_7"
+:ELF_str_END_WHILE_populate_env_7	"END_WHILE_populate_env_7"
+:ELF_str_ELSE_populate_env_8	"ELSE_populate_env_8"
+:ELF_str__END_IF_populate_env_8	"_END_IF_populate_env_8"
+:ELF_str_FOR_END_populate_env_1	"FOR_END_populate_env_1"
+:ELF_str_WHILE_populate_env_11	"WHILE_populate_env_11"
+:ELF_str_END_WHILE_populate_env_11	"END_WHILE_populate_env_11"
+:ELF_str_FUNCTION_main	"FUNCTION_main"
+:ELF_str_WHILE_main_2	"WHILE_main_2"
+:ELF_str_ELSE_main_3	"ELSE_main_3"
+:ELF_str_ELSE_main_4	"ELSE_main_4"
+:ELF_str_ELSE_main_12	"ELSE_main_12"
+:ELF_str__END_IF_main_12	"_END_IF_main_12"
+:ELF_str_ELSE_main_9	"ELSE_main_9"
+:ELF_str__END_IF_main_9	"_END_IF_main_9"
+:ELF_str__END_IF_main_4	"_END_IF_main_4"
+:ELF_str__END_IF_main_3	"_END_IF_main_3"
+:ELF_str_END_WHILE_main_2	"END_WHILE_main_2"
+:ELF_str_ELSE_main_14	"ELSE_main_14"
+:ELF_str__END_IF_main_14	"_END_IF_main_14"
+:ELF_str_ELSE_main_17	"ELSE_main_17"
+:ELF_str_ELSE_main_20	"ELSE_main_20"
+:ELF_str__END_IF_main_20	"_END_IF_main_20"
+:ELF_str__END_IF_main_17	"_END_IF_main_17"
+:ELF_str_ELSE_main_24	"ELSE_main_24"
+:ELF_str__END_IF_main_24	"_END_IF_main_24"
+:ELF_str_ELF_data	"ELF_data"
+:ELF_str_GLOBAL__malloc_ptr	"GLOBAL__malloc_ptr"
+:ELF_str_GLOBAL__brk_ptr	"GLOBAL__brk_ptr"
+:ELF_str_GLOBAL_stdin	"GLOBAL_stdin"
+:ELF_str_GLOBAL_stdout	"GLOBAL_stdout"
+:ELF_str_GLOBAL_stderr	"GLOBAL_stderr"
+:ELF_str_GLOBAL___list	"GLOBAL___list"
+:ELF_str_GLOBAL_command_done	"GLOBAL_command_done"
+:ELF_str_GLOBAL_VERBOSE	"GLOBAL_VERBOSE"
+:ELF_str_GLOBAL_STRICT	"GLOBAL_STRICT"
+:ELF_str_GLOBAL_INIT_MODE	"GLOBAL_INIT_MODE"
+:ELF_str_GLOBAL_FUZZING	"GLOBAL_FUZZING"
+:ELF_str_GLOBAL_WARNINGS	"GLOBAL_WARNINGS"
+:ELF_str_GLOBAL_PATH	"GLOBAL_PATH"
+:ELF_str_GLOBAL_token	"GLOBAL_token"
+:ELF_str_GLOBAL_env	"GLOBAL_env"
+:ELF_str_STRING___toupper_1	"STRING___toupper_1"
+:ELF_str_STRING_strtoint_2	"STRING_strtoint_2"
+:ELF_str_STRING_strtoint_4	"STRING_strtoint_4"
+:ELF_str_STRING_strtoint_6	"STRING_strtoint_6"
+:ELF_str_STRING_strtoint_7	"STRING_strtoint_7"
+:ELF_str_STRING_int2str_0	"STRING_int2str_0"
+:ELF_str_STRING_int2str_1	"STRING_int2str_1"
+:ELF_str_STRING_int2str_3	"STRING_int2str_3"
+:ELF_str_STRING_int2str_6	"STRING_int2str_6"
+:ELF_str_STRING_variable_substitute_ifset_3	"STRING_variable_substitute_ifset_3"
+:ELF_str_STRING_variable_substitute_ifset_5	"STRING_variable_substitute_ifset_5"
+:ELF_str_STRING_variable_substitute_ifset_7	"STRING_variable_substitute_ifset_7"
+:ELF_str_STRING_variable_substitute_1	"STRING_variable_substitute_1"
+:ELF_str_STRING_variable_substitute_3	"STRING_variable_substitute_3"
+:ELF_str_STRING_variable_substitute_5	"STRING_variable_substitute_5"
+:ELF_str_STRING_variable_all_1	"STRING_variable_all_1"
+:ELF_str_STRING_variable_all_2	"STRING_variable_all_2"
+:ELF_str_STRING_variable_all_3	"STRING_variable_all_3"
+:ELF_str_STRING_variable_all_6	"STRING_variable_all_6"
+:ELF_str_STRING_variable_all_7	"STRING_variable_all_7"
+:ELF_str_STRING_handle_variables_0	"STRING_handle_variables_0"
+:ELF_str_STRING_handle_variables_1	"STRING_handle_variables_1"
+:ELF_str_STRING_handle_variables_6	"STRING_handle_variables_6"
+:ELF_str_STRING_find_executable_1	"STRING_find_executable_1"
+:ELF_str_STRING_find_executable_3	"STRING_find_executable_3"
+:ELF_str_STRING_find_executable_7	"STRING_find_executable_7"
+:ELF_str_STRING_find_executable_9	"STRING_find_executable_9"
+:ELF_str_STRING_find_executable_10	"STRING_find_executable_10"
+:ELF_str_STRING_find_executable_11	"STRING_find_executable_11"
+:ELF_str_STRING_list_to_array_0	"STRING_list_to_array_0"
+:ELF_str_STRING_list_to_array_1	"STRING_list_to_array_1"
+:ELF_str_STRING_list_to_array_3	"STRING_list_to_array_3"
+:ELF_str_STRING_list_to_array_4	"STRING_list_to_array_4"
+:ELF_str_STRING_list_to_array_9	"STRING_list_to_array_9"
+:ELF_str_STRING_collect_comment_1	"STRING_collect_comment_1"
+:ELF_str_STRING_collect_string_1	"STRING_collect_string_1"
+:ELF_str_STRING_collect_string_2	"STRING_collect_string_2"
+:ELF_str_STRING_collect_token_0	"STRING_collect_token_0"
+:ELF_str_STRING_collect_token_2	"STRING_collect_token_2"
+:ELF_str_STRING_add_envar_1	"STRING_add_envar_1"
+:ELF_str_STRING_add_envar_4	"STRING_add_envar_4"
+:ELF_str_STRING_add_envar_6	"STRING_add_envar_6"
+:ELF_str_STRING_add_envar_9	"STRING_add_envar_9"
+:ELF_str_STRING_pwd_0	"STRING_pwd_0"
+:ELF_str_STRING_pwd_1	"STRING_pwd_1"
+:ELF_str_STRING_pwd_2	"STRING_pwd_2"
+:ELF_str_STRING_pwd_3	"STRING_pwd_3"
+:ELF_str_STRING_set_2	"STRING_set_2"
+:ELF_str_STRING_set_7	"STRING_set_7"
+:ELF_str_STRING_set_10	"STRING_set_10"
+:ELF_str_STRING_set_11	"STRING_set_11"
+:ELF_str_STRING_set_12	"STRING_set_12"
+:ELF_str_STRING_echo_1	"STRING_echo_1"
+:ELF_str_STRING_echo_3	"STRING_echo_3"
+:ELF_str_STRING_echo_6	"STRING_echo_6"
+:ELF_str_STRING_execute_2	"STRING_execute_2"
+:ELF_str_STRING_execute_4	"STRING_execute_4"
+:ELF_str_STRING_execute_6	"STRING_execute_6"
+:ELF_str_STRING_execute_8	"STRING_execute_8"
+:ELF_str_STRING_execute_10	"STRING_execute_10"
+:ELF_str_STRING_execute_12	"STRING_execute_12"
+:ELF_str_STRING_execute_14	"STRING_execute_14"
+:ELF_str_STRING_execute_16	"STRING_execute_16"
+:ELF_str_STRING_execute_19	"STRING_execute_19"
+:ELF_str_STRING_execute_20	"STRING_execute_20"
+:ELF_str_STRING_execute_22	"STRING_execute_22"
+:ELF_str_STRING_execute_23	"STRING_execute_23"
+:ELF_str_STRING_collect_command_0	"STRING_collect_command_0"
+:ELF_str_STRING_collect_command_1	"STRING_collect_command_1"
+:ELF_str_STRING_collect_command_4	"STRING_collect_command_4"
+:ELF_str_STRING_collect_command_5	"STRING_collect_command_5"
+:ELF_str_STRING_collect_command_7	"STRING_collect_command_7"
+:ELF_str_STRING_collect_command_8	"STRING_collect_command_8"
+:ELF_str_STRING_collect_command_11	"STRING_collect_command_11"
+:ELF_str_STRING_collect_command_12	"STRING_collect_command_12"
+:ELF_str_STRING_collect_command_14	"STRING_collect_command_14"
+:ELF_str_STRING_collect_command_17	"STRING_collect_command_17"
+:ELF_str_STRING_run_script_4	"STRING_run_script_4"
+:ELF_str_STRING_run_script_5	"STRING_run_script_5"
+:ELF_str_STRING_populate_env_0	"STRING_populate_env_0"
+:ELF_str_STRING_populate_env_2	"STRING_populate_env_2"
+:ELF_str_STRING_populate_env_3	"STRING_populate_env_3"
+:ELF_str_STRING_populate_env_4	"STRING_populate_env_4"
+:ELF_str_STRING_populate_env_9	"STRING_populate_env_9"
+:ELF_str_STRING_populate_env_10	"STRING_populate_env_10"
+:ELF_str_STRING_main_0	"STRING_main_0"
+:ELF_str_STRING_main_1	"STRING_main_1"
+:ELF_str_STRING_main_5	"STRING_main_5"
+:ELF_str_STRING_main_6	"STRING_main_6"
+:ELF_str_STRING_main_7	"STRING_main_7"
+:ELF_str_STRING_main_8	"STRING_main_8"
+:ELF_str_STRING_main_10	"STRING_main_10"
+:ELF_str_STRING_main_11	"STRING_main_11"
+:ELF_str_STRING_main_13	"STRING_main_13"
+:ELF_str_STRING_main_15	"STRING_main_15"
+:ELF_str_STRING_main_16	"STRING_main_16"
+:ELF_str_STRING_main_18	"STRING_main_18"
+:ELF_str_STRING_main_19	"STRING_main_19"
+:ELF_str_STRING_main_21	"STRING_main_21"
+:ELF_str_STRING_main_22	"STRING_main_22"
+:ELF_str_STRING_main_23	"STRING_main_23"
+:ELF_str_STRING_main_25	"STRING_main_25"
+:ELF_str_STRING_main_26	"STRING_main_26"
+# END Generated string table
+
+
+# Generated symbol table
+:ELF_sym
+# Required NULL symbol entry
+%0	# st_name
+!0	# st_info
+!0	# st_other
+@1	# st_shndx
+%0 %0	# st_value
+%0 %0	# st_size
+
+%ELF_str_FUNCTION_strcpy>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strcpy %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strcpy_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strcpy_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strcpy_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strcpy_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strncpy>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strncpy %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strncpy_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strncpy_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strncpy_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strncpy_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strncpy_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strncpy_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strncpy_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strncpy_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strncpy_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strncpy_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strncpy_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strncpy_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strncpy_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strncpy_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strncpy_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strncpy_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strcat>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strcat %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strcat_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strcat_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strcat_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strcat_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strcat_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strcat_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strcat_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strcat_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strncat>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strncat %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strncat_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strncat_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strncat_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strncat_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strncat_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strncat_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strncat_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strncat_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strncat_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strncat_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strncat_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strncat_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strlen>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strlen %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strlen_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strlen_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strlen_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strlen_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strnlen_s>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strnlen_s %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strnlen_s_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strnlen_s_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strnlen_s_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strnlen_s_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strnlen_s_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strnlen_s_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strnlen_s_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strnlen_s_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strcmp>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strcmp %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strcmp_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strcmp_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strcmp_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strcmp_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strcmp_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strcmp_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strcmp_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strcmp_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strncmp>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strncmp %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strncmp_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strncmp_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strncmp_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strncmp_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strncmp_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strncmp_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strncmp_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strncmp_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strncmp_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strncmp_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strncmp_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strncmp_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strchr>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strchr %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strchr_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strchr_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strchr_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strchr_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strchr_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strchr_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strchr_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strchr_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strchr_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strchr_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strchr_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strchr_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strrchr>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strrchr %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strrchr_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strrchr_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strrchr_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strrchr_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strrchr_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strrchr_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strrchr_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strrchr_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strrchr_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strrchr_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strrchr_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strrchr_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strspn>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strspn %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strspn_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strspn_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strspn_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strspn_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strspn_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strspn_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strspn_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strspn_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strcspn>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strcspn %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strcspn_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strcspn_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strcspn_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strcspn_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strpbrk>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strpbrk %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_strpbrk_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_strpbrk_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strpbrk_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strpbrk_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strpbrk_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strpbrk_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_strpbrk_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_strpbrk_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_memset>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_memset %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_memset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_memset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_memset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_memset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_memset_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_memset_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_memset_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_memset_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_memcpy>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_memcpy %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_memcpy_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_memcpy_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_memcpy_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_memcpy_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_memcpy_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_memcpy_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_memcpy_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_memcpy_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_memcpy_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_memcpy_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_memcpy_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_memcpy_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_memmove>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_memmove %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_memmove_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_memmove_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_memmove_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_memmove_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_memmove_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_memmove_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_memmove_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_memmove_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_memcmp>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_memcmp %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_memcmp_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_memcmp_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_memcmp_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_memcmp_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_memcmp_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_memcmp_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_memcmp_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_memcmp_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_memcmp_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_memcmp_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_memcmp_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_memcmp_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_access>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_access %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_chdir>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_chdir %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fchdir>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fchdir %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fork>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fork %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_waitpid>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_waitpid %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_execve>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_execve %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_read>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_read %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_write>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_write %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_lseek>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_lseek %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_close>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_close %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION__getcwd>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION__getcwd %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_getcwd>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_getcwd %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_getcwd_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_getcwd_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_getcwd_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_getcwd_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_getwd>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_getwd %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_get_current_dir_name>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_get_current_dir_name %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_brk>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_brk %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_uname>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_uname %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_free>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_free %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_malloc>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_malloc %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_malloc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_malloc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_malloc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_malloc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_malloc_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_malloc_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_malloc_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_malloc_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_malloc_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_malloc_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_malloc_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_malloc_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_memset>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_memset %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_memset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_memset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_memset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_memset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_memset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_memset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_memset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_memset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_calloc>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_calloc %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_calloc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_calloc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_calloc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_calloc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_open>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_open %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION___init_io>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION___init_io %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION___kill_io>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION___kill_io %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE___kill_io_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE___kill_io_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE___kill_io_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE___kill_io_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fgetc>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fgetc %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fgetc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fgetc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fgetc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fgetc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fgetc_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fgetc_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fgetc_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fgetc_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fgetc_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fgetc_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fgetc_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fgetc_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fgetc_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fgetc_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fgetc_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fgetc_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fread>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fread %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fread_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fread_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fread_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fread_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fread_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fread_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fread_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fread_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_fread_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_fread_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_fread_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_fread_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_fread_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_fread_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fread_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fread_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fread_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fread_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_fread_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_fread_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_getchar>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_getchar %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fgets>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fgets %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_fgets_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_fgets_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fgets_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fgets_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fgets_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fgets_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fgets_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fgets_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fgets_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fgets_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_fgets_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_fgets_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fputc>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fputc %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fputc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fputc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fputc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fputc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fputc_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fputc_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fputc_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fputc_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fputc_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fputc_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fputc_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fputc_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fwrite>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fwrite %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fwrite_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fwrite_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fwrite_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fwrite_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_fwrite_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_fwrite_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_fwrite_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_fwrite_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_fwrite_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_fwrite_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_fwrite_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_fwrite_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_putchar>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_putchar %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fputs>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fputs %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_fputs_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_fputs_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_fputs_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_fputs_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_puts>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_puts %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fopen>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fopen %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fopen_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fopen_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fopen_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fopen_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fopen_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fopen_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fopen_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fopen_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fopen_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fopen_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fopen_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fopen_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fopen_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fopen_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fopen_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fopen_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fflush>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fflush %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fflush_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fflush_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fflush_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fflush_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fflush_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fflush_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fflush_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fflush_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fclose>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fclose %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fclose_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fclose_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fclose_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fclose_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fclose_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fclose_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fclose_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fclose_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fclose_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fclose_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fclose_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fclose_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fclose_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fclose_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fclose_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fclose_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fclose_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fclose_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fclose_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fclose_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_ungetc>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_ungetc %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_ungetc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_ungetc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_ungetc_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_ungetc_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_ungetc_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_ungetc_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_ungetc_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_ungetc_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_ungetc_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_ungetc_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_ungetc_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_ungetc_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_ungetc_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_ungetc_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_ungetc_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_ungetc_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_ftell>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_ftell %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_ftell_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_ftell_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_ftell_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_ftell_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_ftell_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_ftell_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_ftell_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_ftell_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_fseek>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_fseek %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fseek_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fseek_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fseek_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fseek_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fseek_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fseek_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fseek_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fseek_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fseek_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fseek_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fseek_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fseek_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fseek_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fseek_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fseek_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fseek_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fseek_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fseek_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fseek_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fseek_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fseek_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fseek_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fseek_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fseek_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_fseek_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_fseek_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_fseek_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_fseek_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_rewind>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_rewind %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_require>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_require %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_require_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_require_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_require_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_require_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_match>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_match %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_match_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_match_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_match_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_match_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_match_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_match_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_match_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_match_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_match_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_match_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_match_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_match_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_match_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_match_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_match_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_match_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_match_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_match_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_TEST_match_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_TEST_match_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_END_match_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_END_match_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_in_set>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_in_set %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_in_set_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_in_set_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_in_set_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_in_set_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_in_set_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_in_set_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_in_set_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_in_set_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_in_set_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_in_set_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_in_set_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_in_set_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION___index_number>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION___index_number %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE___index_number_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE___index_number_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE___index_number_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE___index_number_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF___index_number_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF___index_number_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE___index_number_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE___index_number_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION___toupper>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION___toupper %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE___toupper_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE___toupper_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF___toupper_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF___toupper_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION___set_reader>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION___set_reader %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE___set_reader_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE___set_reader_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF___set_reader_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF___set_reader_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE___set_reader_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE___set_reader_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE___set_reader_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE___set_reader_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF___set_reader_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF___set_reader_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE___set_reader_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE___set_reader_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE___set_reader_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE___set_reader_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF___set_reader_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF___set_reader_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE___set_reader_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE___set_reader_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF___set_reader_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF___set_reader_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_strtoint>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_strtoint %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strtoint_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strtoint_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strtoint_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strtoint_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strtoint_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strtoint_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strtoint_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strtoint_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strtoint_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strtoint_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strtoint_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strtoint_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strtoint_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strtoint_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strtoint_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strtoint_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_strtoint_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_strtoint_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_strtoint_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_strtoint_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_int2str>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_int2str %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_int2str_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_int2str_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_int2str_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_int2str_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_int2str_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_int2str_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_int2str_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_int2str_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_int2str_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_int2str_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_int2str_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_int2str_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_int2str_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_int2str_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_TEST_int2str_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_TEST_int2str_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_END_int2str_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_END_int2str_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_int2str_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_int2str_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_int2str_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_int2str_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_run_substitution>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_run_substitution %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_run_substitution_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_run_substitution_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_run_substitution_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_run_substitution_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_variable_substitute_ifset>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_variable_substitute_ifset %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_variable_substitute_ifset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_variable_substitute_ifset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_substitute_ifset_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_substitute_ifset_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_substitute_ifset_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_substitute_ifset_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_variable_substitute_ifset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_variable_substitute_ifset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_substitute_ifset_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_substitute_ifset_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_substitute_ifset_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_substitute_ifset_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_variable_substitute_ifset_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_variable_substitute_ifset_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_variable_substitute_ifset_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_variable_substitute_ifset_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_variable_substitute_ifset_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_variable_substitute_ifset_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_variable_substitute_ifset_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_variable_substitute_ifset_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_substitute_ifset_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_substitute_ifset_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_substitute_ifset_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_substitute_ifset_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_variable_substitute>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_variable_substitute %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_substitute_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_substitute_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_substitute_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_substitute_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_variable_substitute_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_variable_substitute_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_substitute_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_substitute_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_substitute_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_substitute_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_substitute_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_substitute_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_substitute_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_substitute_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_substitute_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_substitute_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_substitute_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_substitute_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_variable_substitute_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_variable_substitute_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_variable_all>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_variable_all %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_variable_all_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_variable_all_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_all_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_all_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_all_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_all_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_variable_all_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_variable_all_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_variable_all_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_variable_all_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_variable_all_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_variable_all_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_variable_all_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_variable_all_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_variable_all_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_variable_all_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_variable_all_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_variable_all_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_variable_all_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_variable_all_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_handle_variables>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_handle_variables %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_handle_variables_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_handle_variables_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_handle_variables_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_handle_variables_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_handle_variables_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_handle_variables_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_handle_variables_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_handle_variables_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_substitute>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&substitute %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_handle_variables_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_handle_variables_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_handle_variables_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_handle_variables_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_handle_variables_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_handle_variables_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_handle_variables_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_handle_variables_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_handle_variables_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_handle_variables_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_handle_variables_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_handle_variables_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_handle_variables_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_handle_variables_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_handle_variables_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_handle_variables_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_find_char>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_find_char %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_find_char_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_find_char_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_find_char_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_find_char_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_find_char_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_find_char_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_find_char_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_find_char_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_find_char_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_find_char_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_find_char_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_find_char_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_array_length>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_array_length %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_array_length_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_array_length_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_array_length_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_array_length_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_env_lookup>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_env_lookup %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_env_lookup_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_env_lookup_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_env_lookup_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_env_lookup_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_env_lookup_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_env_lookup_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_env_lookup_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_env_lookup_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_find_executable>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_find_executable %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_find_executable_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_find_executable_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_find_executable_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_find_executable_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_find_executable_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_find_executable_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_find_executable_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_find_executable_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_find_executable_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_find_executable_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_find_executable_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_find_executable_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_find_executable_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_find_executable_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_find_executable_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_find_executable_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_find_executable_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_find_executable_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_find_executable_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_find_executable_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_find_executable_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_find_executable_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_find_executable_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_find_executable_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_find_executable_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_find_executable_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_find_executable_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_find_executable_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_find_executable_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_find_executable_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_find_executable_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_find_executable_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_find_executable_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_find_executable_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_find_executable_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_find_executable_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_find_executable_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_find_executable_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_find_executable_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_find_executable_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_list_to_array>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_list_to_array %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_list_to_array_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_list_to_array_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_list_to_array_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_list_to_array_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_list_to_array_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_list_to_array_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_list_to_array_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_list_to_array_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_list_to_array_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_list_to_array_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_list_to_array_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_list_to_array_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_list_to_array_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_list_to_array_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_list_to_array_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_list_to_array_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_list_to_array_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_list_to_array_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_list_to_array_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_list_to_array_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_list_to_array_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_list_to_array_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_list_to_array_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_list_to_array_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_list_to_array_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_list_to_array_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_list_to_array_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_list_to_array_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_list_to_array_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_list_to_array_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_list_to_array_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_list_to_array_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_list_to_array_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_list_to_array_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_list_to_array_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_list_to_array_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_handle_escape>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_handle_escape %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_handle_escape_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_handle_escape_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_handle_escape_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_handle_escape_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_handle_escape_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_handle_escape_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_handle_escape_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_handle_escape_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_handle_escape_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_handle_escape_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_handle_escape_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_handle_escape_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_handle_escape_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_handle_escape_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_handle_escape_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_handle_escape_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_collect_comment>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_collect_comment %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_collect_comment_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_collect_comment_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_TEST_collect_comment_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_TEST_collect_comment_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_END_collect_comment_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_END_collect_comment_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_collect_string>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_collect_string %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_collect_string_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_collect_string_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_string_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_string_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_string_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_string_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_string_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_string_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_string_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_string_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_TEST_collect_string_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_TEST_collect_string_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_END_collect_string_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_END_collect_string_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_collect_token>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_collect_token %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_collect_token_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_collect_token_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_token_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_token_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_token_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_token_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_TEST_collect_token_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_TEST_collect_token_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_DO_END_collect_token_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&DO_END_collect_token_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_is_envar>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_is_envar %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_is_envar_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_is_envar_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_is_envar_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_is_envar_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_is_envar_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_is_envar_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_is_envar_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_is_envar_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_add_envar>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_add_envar %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_add_envar_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_add_envar_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_add_envar_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_add_envar_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_add_envar_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_add_envar_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_add_envar_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_add_envar_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_add_envar_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_add_envar_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_add_envar_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_add_envar_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_add_envar_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_add_envar_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_add_envar_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_add_envar_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_add_envar_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_add_envar_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_add_envar_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_add_envar_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_add_envar_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_add_envar_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_add_envar_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_add_envar_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_cd>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_cd %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_cd_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_cd_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_cd_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_cd_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_cd_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_cd_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_cd_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_cd_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_cd_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_cd_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_cd_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_cd_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_pwd>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_pwd %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_set>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_set %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_set_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_set_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_set_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_set_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_set_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_set_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_set_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_set_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_set_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_set_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_set_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_set_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_set_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_set_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_set_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_set_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_set_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_set_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_set_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_set_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_set_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_set_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_set_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_set_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_set_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_set_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_set_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_set_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_set_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_set_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_set_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_set_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_set_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_set_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_set_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_set_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_set_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_set_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_set_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_set_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_cleanup_set>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&cleanup_set %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_echo>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_echo %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_echo_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_echo_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_echo_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_echo_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_echo_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_echo_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_echo_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_echo_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_echo_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_echo_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_echo_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_echo_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_echo_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_echo_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_echo_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_echo_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_unset>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_unset %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_unset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_unset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_unset_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_unset_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_unset_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_unset_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_unset_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_unset_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_unset_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_unset_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_unset_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_unset_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_unset_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_unset_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_unset_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_unset_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_unset_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_unset_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_unset_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_unset_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_execute>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_execute %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_13>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_13 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_15>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_15 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_15>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_15 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_13>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_13 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_18>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_18 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_18>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_18 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_17>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_17 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_17>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_17 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_21>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_21 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_25>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_25 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_25>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_25 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_execute_24>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_execute_24 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_24>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_24 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_execute_21>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_execute_21 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_collect_command>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_collect_command %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_collect_command_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_collect_command_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_command_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_command_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_command_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_command_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_command_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_command_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_command_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_command_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_collect_command_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_collect_command_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_command_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_command_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_command_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_command_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_collect_command_13>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_collect_command_13 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_command_16>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_command_16 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_command_16>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_command_16 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_command_15>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_command_15 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_command_15>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_command_15 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_collect_command_13>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_collect_command_13 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_collect_command_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_collect_command_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_collect_command_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_collect_command_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_run_script>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_run_script %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_run_script_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_run_script_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_run_script_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_run_script_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_run_script_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_run_script_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_run_script_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_run_script_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_run_script_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_run_script_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_run_script_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_run_script_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_run_script_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_run_script_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_run_script_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_run_script_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_populate_env>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_populate_env %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_populate_env_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_populate_env_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_ITER_populate_env_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_ITER_populate_env_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_THEN_populate_env_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_THEN_populate_env_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_populate_env_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_populate_env_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_populate_env_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_populate_env_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_populate_env_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_populate_env_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_populate_env_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_populate_env_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_populate_env_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_populate_env_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_populate_env_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_populate_env_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_populate_env_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_populate_env_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_populate_env_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_populate_env_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FOR_END_populate_env_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FOR_END_populate_env_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_populate_env_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_populate_env_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_populate_env_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_populate_env_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_FUNCTION_main>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&FUNCTION_main %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_WHILE_main_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&WHILE_main_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_main_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_main_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_main_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_main_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_main_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_main_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_main_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_main_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_main_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_main_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_main_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_main_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_main_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_main_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_main_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_main_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_END_WHILE_main_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&END_WHILE_main_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_main_14>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_main_14 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_main_14>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_main_14 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_main_17>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_main_17 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_main_20>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_main_20 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_main_20>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_main_20 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_main_17>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_main_17 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELSE_main_24>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELSE_main_24 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str__END_IF_main_24>ELF_str	# st_name
+!2	# st_info (FUNC)
+!2	# st_other (hidden)
+@1	# st_shndx
+&_END_IF_main_24 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_ELF_data>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&ELF_data %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL__malloc_ptr>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL__malloc_ptr %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL__brk_ptr>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL__brk_ptr %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_stdin>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_stdin %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_stdout>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_stdout %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_stderr>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_stderr %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL___list>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL___list %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_command_done>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_command_done %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_VERBOSE>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_VERBOSE %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_STRICT>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_STRICT %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_INIT_MODE>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_INIT_MODE %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_FUZZING>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_FUZZING %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_WARNINGS>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_WARNINGS %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_PATH>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_PATH %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_token>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_token %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_GLOBAL_env>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&GLOBAL_env %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING___toupper_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING___toupper_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_strtoint_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_strtoint_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_strtoint_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_strtoint_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_strtoint_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_strtoint_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_strtoint_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_strtoint_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_int2str_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_int2str_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_int2str_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_int2str_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_int2str_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_int2str_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_int2str_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_int2str_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_substitute_ifset_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_substitute_ifset_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_substitute_ifset_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_substitute_ifset_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_substitute_ifset_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_substitute_ifset_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_substitute_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_substitute_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_substitute_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_substitute_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_substitute_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_substitute_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_all_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_all_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_all_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_all_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_all_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_all_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_all_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_all_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_variable_all_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_variable_all_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_handle_variables_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_handle_variables_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_handle_variables_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_handle_variables_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_handle_variables_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_handle_variables_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_find_executable_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_find_executable_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_find_executable_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_find_executable_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_find_executable_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_find_executable_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_find_executable_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_find_executable_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_find_executable_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_find_executable_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_find_executable_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_find_executable_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_list_to_array_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_list_to_array_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_list_to_array_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_list_to_array_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_list_to_array_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_list_to_array_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_list_to_array_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_list_to_array_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_list_to_array_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_list_to_array_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_comment_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_comment_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_string_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_string_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_string_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_string_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_token_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_token_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_token_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_token_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_add_envar_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_add_envar_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_add_envar_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_add_envar_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_add_envar_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_add_envar_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_add_envar_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_add_envar_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_pwd_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_pwd_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_pwd_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_pwd_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_pwd_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_pwd_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_pwd_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_pwd_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_set_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_set_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_set_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_set_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_set_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_set_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_set_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_set_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_set_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_set_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_echo_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_echo_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_echo_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_echo_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_echo_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_echo_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_14>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_14 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_16>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_16 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_19>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_19 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_20>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_20 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_22>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_22 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_execute_23>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_execute_23 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_12>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_12 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_14>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_14 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_collect_command_17>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_collect_command_17 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_run_script_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_run_script_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_run_script_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_run_script_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_populate_env_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_populate_env_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_populate_env_2>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_populate_env_2 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_populate_env_3>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_populate_env_3 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_populate_env_4>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_populate_env_4 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_populate_env_9>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_populate_env_9 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_populate_env_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_populate_env_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_0>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_0 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_1>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_1 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_5>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_5 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_6>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_6 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_7>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_7 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_8>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_8 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_10>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_10 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_11>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_11 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_13>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_13 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_15>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_15 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_16>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_16 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_18>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_18 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_19>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_19 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_21>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_21 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_22>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_22 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_23>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_23 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_25>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_25 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+%ELF_str_STRING_main_26>ELF_str	# st_name
+!2	# st_info (FUNC)
+!0	# st_other (other)
+@1	# st_shndx
+&STRING_main_26 %0	# st_value
+%0 %0	# st_size (unknown size)
+
+# END Generated symbol table
+
+:ELF_end

@@ -2,12 +2,13 @@ PKGS := hex0 kaem-0 \
 	catm-0 hex1 hex2-0 m0 \
 	cc m2-minimal blood-elf-0 m1-0 hex2-1 \
 	kaem mkdir \
-	blood-elf get_machine hex2 m1 m2-planet 
+	blood-elf get_machine hex2 m1 m2-planet \
+	catm mes-m2 sha256sum ungz untar
 
 all: $(PKGS)
 
 $(PKGS):
-	nix build --no-link .#$@
+	nix build --no-link -L .#$@
 
 define check_pkg
 	$(eval $@_DRV_PATH := $(shell nix eval --raw .#$(1).drvPath))

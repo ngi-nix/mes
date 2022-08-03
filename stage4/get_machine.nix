@@ -1,6 +1,6 @@
 { buildM2
 , fetchFromGitHub
-, m2-minimal
+, m2
 }:
 let
   stage0 = import ../sources/stage0.nix { inherit fetchFromGitHub; };
@@ -8,7 +8,7 @@ in
 buildM2
   { name = "get_machine";
 
-    m2 = m2-minimal;
+    inherit m2;
 
     src = stage0 + "/POSIX";
     sources =
