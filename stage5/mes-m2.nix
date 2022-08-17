@@ -17,8 +17,8 @@ let
         set -xe
 
         GUILE_LOAD_PATH=${mes-m2}/mes/module:${mes-m2}/module
-        cd ${mes-m2}
-        printf "${base}/bin/mes" "$@"
+        MES_PREFIX=${mes-m2}
+        ${base}/bin/mes "$@"
       '');
 
   mescc = builtins.toFile "mescc"
