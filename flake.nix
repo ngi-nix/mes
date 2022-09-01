@@ -120,7 +120,6 @@
               }
           );
 
-
         checks = forAllSystems
           (system:
             let
@@ -158,6 +157,20 @@
                     fi
                   '';
               }
+          );
+
+        devShells = forAllSystems 
+          (system:
+            let
+              pkgs = import nixpkgs { inherit system; overlays = [ self.overlay ]; };
+            in
+            {
+              default = pkgs.mkShell {
+                packages = with pkgs;[
+                  gnumake
+                ];
+              };
+            }
           );
       };
 }
