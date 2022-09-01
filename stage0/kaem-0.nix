@@ -24,11 +24,11 @@ else
       drvArgs = {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
-        outputHash = "sha256-lJBHYpQxvlR9T4EKFOdSz/4eutbQg0aJay0cMNth9uU=";
+        outputHash = "sha256-AnKNvJtTO/FjfnPoe4SbnWQZr2uG8HTdh6KoeDySMrI=";
 
         buildInputs = [ stage0 hex0 ];
       };
     }
     ''
-      ${hex0} ${stage0}/seed/POSIX/AMD64/kaem-minimal.hex0 /nix/store/nnbsr1i6ad3sf7wd2a06k6y967fcm0i4-kaem-0
+      ${hex0} ${stage0}/seed/POSIX/AMD64/kaem-minimal.hex0 /nix/store/fwg0niaw8icl5sc1f32bj4b41rli31wj-kaem-0
     ''

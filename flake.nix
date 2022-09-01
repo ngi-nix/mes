@@ -21,26 +21,26 @@
                 hex2 = final.hex2-1;
               };
 
-            hex0 = final.callPackage ./stage0/hex0.nix {};
-            kaem-0 = final.callPackage ./stage0/kaem-0.nix {};
-            hex0-seed = final.callPackage ./stage0/hex0.nix { seed = true; };
+            hex0        = final.callPackage ./stage0/hex0.nix {};
+            kaem-0      = final.callPackage ./stage0/kaem-0.nix {};
+            hex0-seed   = final.callPackage ./stage0/hex0.nix { seed = true; };
             kaem-0-seed = final.callPackage ./stage0/kaem-0.nix { seed = true; };
 
-            hex1   = final.callPackage ./stage1/hex1.nix {};
-            hex2-0 = final.callPackage ./stage1/hex2-0.nix {};
-            catm-0   = final.callPackage ./stage1/catm-0.nix {};
-            m0     = final.callPackage ./stage1/m0.nix {};
+            hex1        = final.callPackage ./stage1/hex1.nix {};
+            hex2-0      = final.callPackage ./stage1/hex2-0.nix {};
+            catm-0      = final.callPackage ./stage1/catm-0.nix {};
+            m0          = final.callPackage ./stage1/m0.nix {};
 
-            cc     = final.callPackage ./stage2/cc.nix {};
-            m2-minimal   = final.callPackage ./stage2/m2-minimal.nix {};
-            blood-elf-0  = final.callPackage ./stage2/blood-elf-0.nix {};
-            m1-0   = final.callPackage ./stage2/m1-0.nix {};
-            hex2-1 = final.callPackage ./stage2/hex2-1.nix {};
+            cc          = final.callPackage ./stage2/cc.nix {};
+            m2-minimal  = final.callPackage ./stage2/m2-minimal.nix {};
+            blood-elf-0 = final.callPackage ./stage2/blood-elf-0.nix {};
+            m1-0        = final.callPackage ./stage2/m1-0.nix {};
+            hex2-1      = final.callPackage ./stage2/hex2-1.nix {};
 
-            kaem   = final.callPackage ./stage3/kaem.nix {};
-            mkdir  = final.callPackage ./stage3/mkdir.nix {};
-            chmod = final.callPackage ./stage3/chmod.nix {};
-            cp = final.callPackage ./stage3/cp.nix {};
+            kaem        = final.callPackage ./stage3/kaem.nix {};
+            mkdir       = final.callPackage ./stage3/mkdir.nix {};
+            chmod       = final.callPackage ./stage3/chmod.nix {};
+            cp          = final.callPackage ./stage3/cp.nix {};
           };
 
         overlays.mes = final: prev:

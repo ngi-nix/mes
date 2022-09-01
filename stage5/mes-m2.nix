@@ -30,12 +30,12 @@ let
         sources =
           (map (x: stage0 + "/POSIX/" + x)
             [ "M2libc/sys/types.h"
-              "M2libc/amd64/Linux/sys/stat.h"
+              "M2libc/amd64/linux/sys/stat.c"
               "M2libc/stddef.h"
-              "M2libc/amd64/Linux/unistd.h"
-              "M2libc/amd64/Linux/bootstrap.c"
+              "M2libc/amd64/linux/unistd.c"
+              "M2libc/amd64/linux/bootstrap.c"
               "M2libc/stdlib.c"
-              "M2libc/amd64/Linux/fcntl.h"
+              "M2libc/amd64/linux/fcntl.c"
               "M2libc/stdio.c"
               "M2libc/string.c"
 	            "M2libc/bootstrappable.c"
@@ -52,11 +52,11 @@ let
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
-#include <fcntl.h>
+#include <unistd.c>
+#include <fcntl.c>
 #include "M2libc/bootstrappable.h"
 #include "${mes-m2}/include/mes/lib-mini.h"
-#include "${mes-m2}/include/unistd.h"
+#include "${mes-m2}/include/unistd.c"
 
 int main(int argc, char** argv, char** envp)
 {
