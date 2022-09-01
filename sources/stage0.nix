@@ -2,7 +2,7 @@
 fetchFromGitHub {
   owner = "oriansj";
   repo = "stage0";
-  rev = "4fec19dd0d904fd79f66eb1bf7db55d2917c2590";
-  sha256 = "sha256-JTfxFBzMlxD3yX/F8FvKTBWEl8zvuTqGiJ61Mu/Ko00=";
+  rev = "a6238b478072b06ce5db1879c648bc2c5cfcae98";
+  sha256 = "sha256-+zY1xpTU8uB1AcalUGwpJLwEM0LIRzXf+NSlVAcB/yE=";
   fetchSubmodules = true;
 }

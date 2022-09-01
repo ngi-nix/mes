@@ -7,7 +7,7 @@ let
   stage0 = import ../sources/stage0.nix { inherit fetchFromGitHub; };
   cSources = import ../utils/c-sources.nix { inherit lib stage0; }
     "-f"
-    [ "M2libc/amd64/Linux/bootstrap.c"
+    [ "M2libc/amd64/linux/bootstrap.c"
       "M2libc/bootstrappable.c"
       "mescc-tools/M1-macro.c"
     ];
