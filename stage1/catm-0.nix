@@ -23,5 +23,5 @@ runCommandKaem
     kaem = kaem-0;
   }
   ''
-    ${hex0} ${stage0}/POSIX/AMD64/catm_AMD64.hex0 /nix/store/cg9dzhkznkwg9779hkvffvm7qyr239kn-catm-0
+    ${hex0} ${stage0}/POSIX/AMD64/catm_AMD64.hex0 /nix/store/zyqikzh0l6wjgs083clx0cri9m2m10lx-catm-0
   ''
