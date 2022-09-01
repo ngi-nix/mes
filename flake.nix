@@ -91,6 +91,7 @@
             ungz = final.callPackage ./stage5/ungz.nix {};
 
             mes-m2 = final.callPackage ./stage5/mes-m2.nix {};
+            tinycc = final.callPackage ./tinycc {};
           };
 
         overlay = self.overlays.mes;
@@ -112,7 +113,8 @@
                   m2-planet blood-elf m1 hex2 get_machine
                   kaem mkdir chmod cp
                   catm sha256sum untar ungz
-                  mes-m2;
+                  mes-m2
+                  tinycc;
 
                 fancyModule = pkgs.callPackage ./utils/selfhost-mes-m2.nix {};
               }
