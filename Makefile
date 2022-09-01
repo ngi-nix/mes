@@ -26,7 +26,7 @@ endif
 
 define delete_pkg
 	$(eval $@_STORE_PATH := $(shell nix eval --impure --raw .#$(1)))
-	sudo nix store delete --ignore-liveness $($@_STORE_PATH)
+	sudo nix-store --delete --ignore-liveness $($@_STORE_PATH)
 
 endef
 
