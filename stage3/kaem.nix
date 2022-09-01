@@ -15,7 +15,7 @@ let
       "M2libc/stdlib.c"
       "M2libc/amd64/Linux/fcntl.h"
       "M2libc/stdio.c"
-      "M2libc/bootstrappable.c" 
+      "M2libc/bootstrappable.c"
     ];
   m1Sources = import ../utils/c-sources.nix { inherit lib stage0; }
     "-f"
@@ -29,14 +29,14 @@ runCommandKaem
       outputHashMode = "recursive";
       outputHashAlgo = "sha256";
       outputHash = "sha256-CjOIcuR1isFiEgq+qyAhC/7WP8x7I1UxEmnrlIM8yHc=";
-      
+
       hasBinDir = false;
 
       buildInputs =
         [ stage0 mescc-tools
           m2-minimal blood-elf-0 m1-0 hex2-1
         ];
-    }; 
+    };
 
     kaem = kaem-0;
   }
@@ -46,7 +46,7 @@ runCommandKaem
       -f ${mescc-tools}/Kaem/kaem.h \
       -f ${mescc-tools}/Kaem/variable.c \
       -f ${mescc-tools}/Kaem/kaem_globals.c \
-	    -f ${mescc-tools}/Kaem/kaem.c \
+      -f ${mescc-tools}/Kaem/kaem.c \
       --debug \
       -o /build/kaem.M1
 
@@ -57,12 +57,12 @@ runCommandKaem
       ${m1Sources} \
       -f /build/kaem.M1 \
       -f /build/kaem_footer.M1 \
-     	-o /build/kaem.hex2
+      -o /build/kaem.hex2
 
     ${hex2-1} --architecture amd64 \
       --little-endian \
       --base-address 0x00600000 \
       -f ${stage0}/POSIX/M2libc/amd64/ELF-amd64-debug.hex2 \
       -f /build/kaem.hex2 \
-     	-o /nix/store/cf0jrd8hnd4q4kqlbq6gdq9fg1f629f2-kaem
+      -o /nix/store/cf0jrd8hnd4q4kqlbq6gdq9fg1f629f2-kaem
   ''

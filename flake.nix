@@ -12,34 +12,35 @@
       {
         overlays.bootstrap = final: prev:
           {
-                runCommandKaem = final.callPackage ./utils/run-command-kaem.nix {};
-                buildM2 = final.callPackage ./utils/build-m2.nix
-                  { m2-planet = final.m2-minimal;
-                    blood-elf = final.blood-elf-0;
-                    m1 = final.m1-0;
-                    hex2 = final.hex2-1;
-                  };
+            runCommandKaem = final.callPackage ./utils/run-command-kaem.nix {};
+            writeTextK = final.callPackage ./utils/write-text.nix { bootstrap = final; };
+            buildM2 = final.callPackage ./utils/build-m2.nix
+              { m2-planet = final.m2-minimal;
+                blood-elf = final.blood-elf-0;
+                m1 = final.m1-0;
+                hex2 = final.hex2-1;
+              };
 
-                hex0 = final.callPackage ./stage0/hex0.nix {};
-                kaem-0 = final.callPackage ./stage0/kaem-0.nix {};
-                hex0-seed = final.callPackage ./stage0/hex0.nix { seed = true; };
-                kaem-0-seed = final.callPackage ./stage0/kaem-0.nix { seed = true; };
+            hex0 = final.callPackage ./stage0/hex0.nix {};
+            kaem-0 = final.callPackage ./stage0/kaem-0.nix {};
+            hex0-seed = final.callPackage ./stage0/hex0.nix { seed = true; };
+            kaem-0-seed = final.callPackage ./stage0/kaem-0.nix { seed = true; };
 
-                hex1   = final.callPackage ./stage1/hex1.nix {};
-                hex2-0 = final.callPackage ./stage1/hex2-0.nix {};
-                catm-0   = final.callPackage ./stage1/catm-0.nix {};
-                m0     = final.callPackage ./stage1/m0.nix {};
+            hex1   = final.callPackage ./stage1/hex1.nix {};
+            hex2-0 = final.callPackage ./stage1/hex2-0.nix {};
+            catm-0   = final.callPackage ./stage1/catm-0.nix {};
+            m0     = final.callPackage ./stage1/m0.nix {};
 
-                cc     = final.callPackage ./stage2/cc.nix {};
-                m2-minimal   = final.callPackage ./stage2/m2-minimal.nix {};
-                blood-elf-0  = final.callPackage ./stage2/blood-elf-0.nix {};
-                m1-0   = final.callPackage ./stage2/m1-0.nix {};
-                hex2-1 = final.callPackage ./stage2/hex2-1.nix {};
+            cc     = final.callPackage ./stage2/cc.nix {};
+            m2-minimal   = final.callPackage ./stage2/m2-minimal.nix {};
+            blood-elf-0  = final.callPackage ./stage2/blood-elf-0.nix {};
+            m1-0   = final.callPackage ./stage2/m1-0.nix {};
+            hex2-1 = final.callPackage ./stage2/hex2-1.nix {};
 
-                kaem   = final.callPackage ./stage3/kaem.nix {};
-                mkdir  = final.callPackage ./stage3/mkdir.nix {};
-                chmod = final.callPackage ./stage3/chmod.nix {};
-                cp = final.callPackage ./stage3/cp.nix {}; 
+            kaem   = final.callPackage ./stage3/kaem.nix {};
+            mkdir  = final.callPackage ./stage3/mkdir.nix {};
+            chmod = final.callPackage ./stage3/chmod.nix {};
+            cp = final.callPackage ./stage3/cp.nix {};
           };
 
         overlays.mes = final: prev:
@@ -55,9 +56,10 @@
                 this;
 
             runCommandKaem = final.callPackage ./utils/run-command-kaem.nix {};
+            writeTextK = final.callPackage ./utils/write-text.nix { };
             buildM2 = final.callPackage ./utils/build-m2.nix {};
             makeBinDir = final.callPackage ./stage4/make-bin-dir.nix
-              { inherit (final.bootstrap) kaem mkdir;
+              { inherit (final.bootstrap) kaem mkdir chmod;
               };
 
             inherit (final.bootstrap) cp chmod;
@@ -91,6 +93,7 @@
             ungz = final.callPackage ./stage5/ungz.nix {};
 
             mes-m2 = final.callPackage ./stage5/mes-m2.nix {};
+
             tinycc = final.callPackage ./tinycc {};
           };
 
@@ -134,8 +137,8 @@
 
                     if [[ "$hex0u" = "$hex0s" ]] ; then
                        cat > $out <<EOF
-                    ${bootstrap.hex0} -> $hex0u 
-                    ${bootstrap.hex0-seed} -> $hex0s 
+                    ${bootstrap.hex0} -> $hex0u
+                    ${bootstrap.hex0-seed} -> $hex0s
                     EOF
                     else
                       exit 1
@@ -149,8 +152,8 @@
 
                     if [[ "$kaemu" = "$kaems" ]] ; then
                        cat > $out <<EOF
-                    ${bootstrap.kaem-0} -> $kaemu 
-                    ${bootstrap.kaem-0-seed} -> $kaems 
+                    ${bootstrap.kaem-0} -> $kaemu
+                    ${bootstrap.kaem-0-seed} -> $kaems
                     EOF
                     else
                       exit 1
@@ -159,18 +162,18 @@
               }
           );
 
-        devShells = forAllSystems 
+        devShells = forAllSystems
           (system:
             let
               pkgs = import nixpkgs { inherit system; overlays = [ self.overlay ]; };
             in
-            {
-              default = pkgs.mkShell {
-                packages = with pkgs;[
-                  gnumake
-                ];
-              };
-            }
+              {
+                default = pkgs.mkShell {
+                  packages = with pkgs;[
+                    gnumake
+                  ];
+                };
+              }
           );
       };
 }

@@ -17,6 +17,8 @@
 , kaem ? top.kaem, mkdir ? top.mkdir
 
 , postInstall ? ""
+, drvArgs ? {}
+, runCommandKaemArgs ? {}
 }@args:
 with lib;
 
@@ -41,14 +43,15 @@ let
 
   is64 = if architecture == "aarch64" || architecture == "amd64" then true else false;
 in
-runCommandKaem
-  { inherit name kaem;
+(runCommandKaem
+  ({ inherit name kaem;
+
     drvArgs = {
       buildInputs =
         [ m2 blood-elf m1 hex2 mkdir src stage0
         ] ++ buildInputs;
     };
-  }
+  } // runCommandKaemArgs)
   ''
     set -xe
 
@@ -80,4 +83,4 @@ runCommandKaem
 
     echo asd
     ${postInstall}
-  ''
+  '') // drvArgs

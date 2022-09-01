@@ -1,10 +1,11 @@
 { buildM2
-, fetchFromGitHub, runCommandKaem
+, fetchFromGitHub, runCommandKaem, writeTextK
 , m1, hex2
 , cp, kaem, mkdir, chmod
 }:
 let
   mes-m2 = import ../sources/mes-m2.nix { inherit fetchFromGitHub; };
+  stage0 = import ../sources/stage0.nix { inherit fetchFromGitHub; };
   nyacc = builtins.fetchTarball
     { url = "https://download.savannah.gnu.org/releases/nyacc/nyacc-1.00.2.tar.gz";
       sha256 = "sha256:06rg6pn4k8smyydwls1abc9h702cri3z65ac9gvc4rxxklpynslk";
@@ -21,16 +22,82 @@ let
         ${base}/bin/mes "$@"
       '');
 
-  mescc = builtins.toFile "mescc"
-    ( builtins.unsafeDiscardStringContext
-      ''
-        #!${kaem}/bin/kaem -f
-        GUILE_LOAD_PATH=${mes-m2}/mes/module:${mes-m2}/module:${nyacc}/module
-        PATH=${m1}/bin:${hex2}/bin:''${PATH}
-        cd ${mes-m2}
-        ${base}/bin/mes -e main ${mes-m2}/scripts/mescc.scm "$@"
-      '');
-  base = 
+  mescc = # builtins.toFile "mescc"
+    buildM2
+      { name = "mescc";
+
+        src = "/";
+        sources =
+          (map (x: stage0 + "/POSIX/" + x)
+            [ "M2libc/sys/types.h"
+              "M2libc/amd64/Linux/sys/stat.h"
+              "M2libc/stddef.h"
+              "M2libc/amd64/Linux/unistd.h"
+              "M2libc/amd64/Linux/bootstrap.c"
+              "M2libc/stdlib.c"
+              "M2libc/amd64/Linux/fcntl.h"
+              "M2libc/stdio.c"
+              "M2libc/string.c"
+	            "M2libc/bootstrappable.c"
+            ]) ++
+          (map (x: mes-m2 + "/" + x)
+            [ "include/mes/lib.h"
+              "include/mes/lib-mini.h"
+              "lib/posix/getenv.c"
+              "lib/posix/setenv.c"
+              "lib/posix/execvp.c"
+            ]) ++
+          [ (writeTextK { name = "mescc.c"; }
+              ''
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include "M2libc/bootstrappable.h"
+#include "${mes-m2}/include/mes/lib-mini.h"
+#include "${mes-m2}/include/unistd.h"
+
+int main(int argc, char** argv, char** envp)
+{
+  environ = envp;
+  char* path = strcat("${m1}/bin:${hex2}/bin:", getenv("PATH"));
+  int* args_len = 4 + argc + 1;
+  char** args = malloc(sizeof(char*) * args_len);
+  args[0] = "${base}/bin/mes";
+  args[1] = "-e";
+  args[2] = "main";
+  args[3] = "${mes-m2}/scripts/mescc.scm";
+
+  int i = 4;
+  while (i < argc + 4)
+  {
+    args[i] = argv[i - 4];
+
+    i = i + 1;
+  }
+  args[args_len] = NULL;
+
+  setenv("GUILE_LOAD_PATH", "${mes-m2}/mes/module:${mes-m2}/module:${nyacc}/module");
+  setenv("PATH", path);
+  chdir("${mes-m2}");
+  execvp("${base}/bin/mes", args);
+}
+              '')
+          ];
+
+        architecture = "amd64";
+        endiannes = "little";
+      };
+    # ( builtins.unsafeDiscardStringContext
+    #   ''
+    #     #!${kaem}/bin/kaem -f
+    #     GUILE_LOAD_PATH=${mes-m2}/mes/module:${mes-m2}/module:${nyacc}/module
+    #     PATH=${m1}/bin:${hex2}/bin:''${PATH}
+    #     cd ${mes-m2}
+    #     ${base}/bin/mes -e main ${mes-m2}/scripts/mescc.scm "$@"
+    #   '');
+  base =
     buildM2
       { name = "mes";
 
@@ -154,6 +221,6 @@ runCommandKaem
     ${cp}/bin/cp -v ${mes} ''${out}/bin/mes
     ${cp}/bin/cp -v ${mescc} ''${out}/bin/mescc
 
-    ${chmod}/bin/chmod -v 755 ''${out}/bin/mes 
-    ${chmod}/bin/chmod -v 755 ''${out}/bin/mescc 
+    ${chmod}/bin/chmod -v 755 ''${out}/bin/mes
+    ${chmod}/bin/chmod -v 755 ''${out}/bin/mescc
   ''

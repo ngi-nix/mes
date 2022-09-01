@@ -7,6 +7,10 @@ in
 buildM2
   { name = "cp";
 
+    runCommandKaemArgs = {
+      forceNoWriteText = true;
+    };
+
     src = stage0 + "/POSIX";
     sources =
       [ "M2libc/sys/types.h"
