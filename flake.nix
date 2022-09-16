@@ -40,7 +40,7 @@
             kaem   = final.callPackage ./stage3/kaem.nix {};
             mkdir  = final.callPackage ./stage3/mkdir.nix {};
             chmod = final.callPackage ./stage3/chmod.nix {};
-            cp = final.callPackage ./stage3/cp.nix {};
+            # cp = final.callPackage ./stage3/cp.nix {};
           };
 
         overlays.mes = final: prev:
@@ -58,43 +58,44 @@
             runCommandKaem = final.callPackage ./utils/run-command-kaem.nix {};
             writeTextK = final.callPackage ./utils/write-text.nix { };
             buildM2 = final.callPackage ./utils/build-m2.nix {};
-            makeBinDir = final.callPackage ./stage4/make-bin-dir.nix
-              { inherit (final.bootstrap) kaem mkdir chmod;
-              };
+            kaem = final.bootstrap.kaem;
+            # makeBinDir = final.callPackage ./stage4/make-bin-dir.nix
+            #   { inherit (final.bootstrap) kaem mkdir chmod;
+            #   };
 
-            inherit (final.bootstrap) cp chmod;
-            kaem = final.makeBinDir final.bootstrap.kaem;
-            mkdir = final.makeBinDir final.bootstrap.mkdir;
-            m2-planet = final.callPackage ./stage4/m2-planet.nix
-              { m2 = final.bootstrap.m2-minimal;
-              };
-            blood-elf = final.callPackage ./stage4/blood-elf.nix
-              { m2 = final.bootstrap.m2-minimal;
-                blood-elf = final.bootstrap.blood-elf-0;
-              };
-            m1     = final.callPackage ./stage4/m1.nix
-              { m2 = final.bootstrap.m2-minimal;
-                blood-elf = final.bootstrap.blood-elf-0;
-                m1 = final.bootstrap.m1-0;
-                hex2 = final.bootstrap.hex2-1;
-              };
-            hex2   = final.callPackage ./stage4/hex2.nix
-              { m2 = final.bootstrap.m2-minimal;
-                blood-elf = final.bootstrap.blood-elf-0;
-                hex2 = final.bootstrap.hex2-1;
-              };
-            get_machine = final.callPackage ./stage4/get_machine.nix
-              { m2 = final.bootstrap.m2-minimal;
-              };
+            # # inherit (final.bootstrap) cp chmod;
+            # kaem = final.makeBinDir final.bootstrap.kaem;
+            # mkdir = final.makeBinDir final.bootstrap.mkdir;
+            # m2-planet = final.callPackage ./stage4/m2-planet.nix
+            #   { m2 = final.bootstrap.m2-minimal;
+            #   };
+            # blood-elf = final.callPackage ./stage4/blood-elf.nix
+            #   { m2 = final.bootstrap.m2-minimal;
+            #     blood-elf = final.bootstrap.blood-elf-0;
+            #   };
+            # m1     = final.callPackage ./stage4/m1.nix
+            #   { m2 = final.bootstrap.m2-minimal;
+            #     blood-elf = final.bootstrap.blood-elf-0;
+            #     m1 = final.bootstrap.m1-0;
+            #     hex2 = final.bootstrap.hex2-1;
+            #   };
+            # hex2   = final.callPackage ./stage4/hex2.nix
+            #   { m2 = final.bootstrap.m2-minimal;
+            #     blood-elf = final.bootstrap.blood-elf-0;
+            #     hex2 = final.bootstrap.hex2-1;
+            #   };
+            # get_machine = final.callPackage ./stage4/get_machine.nix
+            #   { m2 = final.bootstrap.m2-minimal;
+            #   };
 
-            catm = final.callPackage ./stage5/catm.nix {};
-            sha256sum = final.callPackage ./stage5/sha256sum.nix {};
-            untar = final.callPackage ./stage5/untar.nix {};
-            ungz = final.callPackage ./stage5/ungz.nix {};
+            # catm = final.callPackage ./stage5/catm.nix {};
+            # sha256sum = final.callPackage ./stage5/sha256sum.nix {};
+            # untar = final.callPackage ./stage5/untar.nix {};
+            # ungz = final.callPackage ./stage5/ungz.nix {};
 
-            mes-m2 = final.callPackage ./stage5/mes-m2.nix {};
+            # mes-m2 = final.callPackage ./stage5/mes-m2.nix {};
 
-            tinycc = final.callPackage ./tinycc {};
+            # tinycc = final.callPackage ./tinycc {};
           };
 
         overlay = self.overlays.mes;
@@ -114,7 +115,7 @@
 
                 inherit (pkgs)
                   m2-planet blood-elf m1 hex2 get_machine
-                  kaem mkdir chmod cp
+                  kaem mkdir chmod # cp
                   catm sha256sum untar ungz
                   mes-m2
                   tinycc;
