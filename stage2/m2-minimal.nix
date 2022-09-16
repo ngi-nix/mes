@@ -8,7 +8,7 @@ let
   stage0 = import ../sources/stage0.nix { inherit fetchFromGitHub; };
   cSources = import ../utils/c-sources.nix { inherit lib stage0; }
     ""
-    [ "M2libc/amd64/Linux/bootstrap.c"
+    [ "M2libc/amd64/linux/bootstrap.c"
       "M2-Planet/cc.h"
       "M2libc/bootstrappable.c"
       "M2-Planet/cc_globals.c"
@@ -25,7 +25,7 @@ runCommandKaem
     drvArgs = {
       outputHashMode = "recursive";
       outputHashAlgo = "sha256";
-      outputHash = "sha256-BP8EBzlt7s6VRNUt99SnZ60vAndrX6b3rLexKLv4gpo=";
+      outputHash = "sha256-H9G/rMOFoESQL4OIOLiHCBt94F7G3FVskjvQEM9D/cw=";
 
       hasBinDir = false;
 
@@ -43,5 +43,5 @@ runCommandKaem
     ${catm-0} /build/M2.M1 ${stage0}/POSIX/AMD64/amd64_defs.M1 ${stage0}/POSIX/AMD64/libc-core.M1 /build/M2-0.M1
     ${m0} /build/M2.M1 /build/M2.hex2
     ${catm-0} /build/ELF_M2.hex2 ${stage0}/POSIX/AMD64/ELF-amd64.hex2 /build/M2.hex2
-    ${hex2-0} /build/ELF_M2.hex2 /nix/store/rn77jp3d27iqhyy944xqnr1dagbybvvm-m2-minimal
+    ${hex2-0} /build/ELF_M2.hex2 /nix/store/blwrzdzkyxpr25y95kjdj36ix6gj8z8y-m2-minimal
   ''

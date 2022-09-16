@@ -1,5 +1,5 @@
 { runCommandKaem
-, hex0, kaem-0
+, hex2-0, kaem-0
 , lib
 , fetchFromGitHub
 }:
@@ -8,7 +8,7 @@ let
   stage0 = import ../sources/stage0.nix { inherit fetchFromGitHub; };
 in
 runCommandKaem
-  { name = "catm";
+  { name = "catm-0";
     drvArgs = {
       outputHashMode = "recursive";
       outputHashAlgo = "sha256";
@@ -16,12 +16,12 @@ runCommandKaem
 
       buildInputs =
         [ stage0
-          hex0
+          hex2-0
         ];
     };
 
     kaem = kaem-0;
   }
   ''
-    ${hex0} ${stage0}/POSIX/AMD64/catm_AMD64.hex0 /nix/store/cg9dzhkznkwg9779hkvffvm7qyr239kn-catm
+    ${hex2-0} ${stage0}/POSIX/AMD64/catm_AMD64.hex2 /nix/store/zyqikzh0l6wjgs083clx0cri9m2m10lx-catm-0
   ''

@@ -14,12 +14,13 @@ buildM2
     sources = 
       [ "M2libc/sys/types.h"
         "M2libc/stddef.h"
+        "M2libc/amd64/linux/fcntl.c"
+        "M2libc/amd64/linux/unistd.c"
         "M2libc/string.c"
-        "M2libc/amd64/Linux/unistd.h"
         "M2libc/stdlib.c"
-        "M2libc/amd64/Linux/fcntl.h"
         "M2libc/stdio.c"
         "M2libc/bootstrappable.c"
+        "mescc-tools/stringify.c"
         "mescc-tools/M1-macro.c"
       ];
     architecture = "amd64";

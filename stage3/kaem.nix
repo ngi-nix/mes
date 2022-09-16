@@ -11,9 +11,9 @@ let
     [ "M2libc/sys/types.h"
       "M2libc/stddef.h"
       "M2libc/string.c"
-      "M2libc/amd64/Linux/unistd.h"
+      "M2libc/amd64/linux/fcntl.c"
+      "M2libc/amd64/linux/unistd.c"
       "M2libc/stdlib.c"
-      "M2libc/amd64/Linux/fcntl.h"
       "M2libc/stdio.c"
       "M2libc/bootstrappable.c"
     ];
@@ -28,7 +28,7 @@ runCommandKaem
     drvArgs = {
       outputHashMode = "recursive";
       outputHashAlgo = "sha256";
-      outputHash = "sha256-CjOIcuR1isFiEgq+qyAhC/7WP8x7I1UxEmnrlIM8yHc=";
+      outputHash = "sha256-N2hLpVNjwt8/Z05Xh/Syi3sCDpQLSa2iDVdNXIaS/0M=";
 
       hasBinDir = false;
 
@@ -50,7 +50,7 @@ runCommandKaem
       --debug \
       -o /build/kaem.M1
 
-    ${blood-elf-0} --64 -f /build/kaem.M1 -o /build/kaem_footer.M1
+    ${blood-elf-0} --64 --little-endian -f /build/kaem.M1 -o /build/kaem_footer.M1
 
     ${m1-0} --architecture amd64 \
       --little-endian \
@@ -64,5 +64,5 @@ runCommandKaem
       --base-address 0x00600000 \
       -f ${stage0}/POSIX/M2libc/amd64/ELF-amd64-debug.hex2 \
       -f /build/kaem.hex2 \
-      -o /nix/store/cf0jrd8hnd4q4kqlbq6gdq9fg1f629f2-kaem
+      -o /nix/store/qmz7xjz5z00gydhd1v2cbc7ygr86xlap-kaem
   ''

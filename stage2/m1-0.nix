@@ -7,8 +7,9 @@ let
   stage0 = import ../sources/stage0.nix { inherit fetchFromGitHub; };
   cSources = import ../utils/c-sources.nix { inherit lib stage0; }
     "-f"
-    [ "M2libc/amd64/Linux/bootstrap.c"
+    [ "M2libc/amd64/linux/bootstrap.c"
       "M2libc/bootstrappable.c"
+      "mescc-tools/stringify.c"
       "mescc-tools/M1-macro.c"
     ];
 in     
@@ -17,7 +18,7 @@ runCommandKaem
     drvArgs = {
       outputHashMode = "recursive";
       outputHashAlgo = "sha256";
-      outputHash = "sha256-xvH8nJ5zSQcrqXOC9YVqg7qLlTPAeMAO2WehZEWFNPg=";
+      outputHash = "sha256-/3RQX+MSwtnSf8fiA+eLWcHo0QO8z8fcE1d34dsWMDk=";
 
       hasBinDir = false;
 
@@ -36,9 +37,9 @@ runCommandKaem
       --debug \
 	    -o /build/m1-0.M1 
 
-    ${blood-elf-0} --64 -f /build/m1-0.M1 -o /build/m1-0-footer.M1
+    ${blood-elf-0} --64 --little-endian -f /build/m1-0.M1 -o /build/m1-0-footer.M1
     ${catm-0} /build/m1-0_defs_libc_dbg.M1 ${stage0}/POSIX/M2libc/amd64/amd64_defs.M1 ${stage0}/POSIX/M2libc/amd64/libc-core.M1 /build/m1-0.M1 /build/m1-0-footer.M1
     ${m0} /build/m1-0_defs_libc_dbg.M1 /build/m1-0.hex2
     ${catm-0} /build/m1-0_dbg.hex2 ${stage0}/POSIX/M2libc/amd64/ELF-amd64-debug.hex2 /build/m1-0.hex2
-    ${hex2-0} /build/m1-0_dbg.hex2 /nix/store/04jvbv19visppgh3yg1qzwz6s6qs3qaj-m1-0
+    ${hex2-0} /build/m1-0_dbg.hex2 /nix/store/nx7l5rysarh0jn5ii461fkzlkplwv1s6-m1-0
   ''

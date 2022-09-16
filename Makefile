@@ -1,5 +1,5 @@
 PKGS := hex0 kaem-0 \
-	catm-0 hex1 hex2-0 m0 \
+	hex1 hex2-0 catm-0 m0 \
 	cc m2-minimal blood-elf-0 m1-0 hex2-1 \
 	kaem mkdir \
 	blood-elf get_machine hex2 m1 m2-planet \

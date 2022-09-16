@@ -61,7 +61,7 @@ in
       ${m2Args} \
       -o /build/pkg.M1
 
-    ${blood-elfP} ${if is64 then "--64" else ""} -f /build/pkg.M1 -o /build/pkg_footer.M1 ${blood-elfArgs}
+    ${blood-elfP} ${if is64 then "--64" else ""} --little-endian -f /build/pkg.M1 -o /build/pkg_footer.M1 ${blood-elfArgs}
 
     ${m1P} --architecture ${architecture} \
       --little-endian \

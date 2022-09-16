@@ -25,7 +25,7 @@ else
       drvArgs = {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
-        outputHash = "sha256-Nz5Sp5buTdggkR9GK4s8+2bvZDOHLyArPMOcDXyIWss=";
+        outputHash = "sha256-3/4dGQnmmK6aJnNHW/iiRCvlgVEilxFzo6mE24rYX78=";
 
         buildInputs =
           [ stage0
@@ -34,5 +34,5 @@ else
       };
     }
     ''
-      ${hex0s} ${stage0}/seed/POSIX/AMD64/hex0_AMD64.hex0 /nix/store/02g0hhbd3ahkzjflb72bwm6zd4ba2bbp-hex0
+      ${hex0s} ${stage0}/seed/POSIX/AMD64/hex0_AMD64.hex0 /nix/store/7m87krp7ghhrcxwsc7g238106m8iwhnj-hex0
     ''
