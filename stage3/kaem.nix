@@ -64,5 +64,5 @@ runCommandKaem
       --base-address 0x00600000 \
       -f ${stage0}/POSIX/M2libc/amd64/ELF-amd64-debug.hex2 \
       -f /build/kaem.hex2 \
-      -o /nix/store/qmz7xjz5z00gydhd1v2cbc7ygr86xlap-kaem
+      -o /nix/store/cv4yhpg7myq48w7s5ghphv4gdqicdr1v-kaem
   ''
